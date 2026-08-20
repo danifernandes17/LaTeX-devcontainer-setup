@@ -58,8 +58,7 @@
 \usepackage{todonotes}
 \usepackage[normalem]{ulem}
 \usepackage{tikz}
-% ponytail: acmart already loads amsfonts/amssymb via newtxmath
-
+% \usepackage{amssymb}
 
 \newcommand{\blackcircled}[1]{%
   \tikz[baseline=(char.base)]{
@@ -111,7 +110,7 @@
 \newtexttrue        %  <-- \newtextfalse for the submission build
 \definecolor{colornew}{rgb}{0.75, 0.05, 0.05}
 \newcommand{\new}[1]{\ifnewtext\textcolor{colornew}{#1}\else#1\fi}
-% ponytail: removed newblock env — clashes with natbib's \newblock, and was unused
+% \newenvironment{newblock}{\ifnewtext\color{colornew}\fi\ignorespaces}{}
 % Marking text *inside a section heading*: \texorpdfstring keeps the colour out
 % of the PDF bookmark, which hyperref cannot typeset.
 \newcommand{\newh}[1]{\texorpdfstring{\new{#1}}{#1}}
@@ -512,7 +511,7 @@ The LSAT reasoning task was selected for several key reasons. First, the LSAT is
 
 \begin{figure}[!htp]
     \centering
-    \includegraphics[width=\linewidth]{images/daniela_trace_fig_hidden.jpg}
+    \includegraphics[width=\linewidth]{daniela_trace_fig_hidden.jpg}
     \caption{Left: GPT streams its full chain-of-thought into the chat (\textit{Full-trace}). Once the trace finishes, a Final Answer reveal button would appear; clicking it reveals the model's final answer. Middle: The assistant streams a short reasoning summary into the chat. When generation completes, the same response area shows the reasoning summary followed sequentially by the final answer, presented as a single message. Right: GPT only reveals the final answer in the chat.}
     \label{fig:interface}
 \end{figure}
@@ -606,7 +605,7 @@ As a benchmark comparison, we tested whether participants in each condition perf
 
 \begin{figure}[!htp]
     \centering
-    \includegraphics[width=0.8\linewidth]{images/comparison_3modes.pdf}
+    \includegraphics[width=0.8\linewidth]{comparison_3modes.pdf}
     \caption{Achieved performance (0-10) across trace formats. \textit{Answer-only} condition, $N=187$ (blue curve); \textit{Full-trace} condition, $N=181$ (orange curve); \textit{Summary-trace} condition, $N=188$ (green curve). The performance of the models is represented by a dashed vertical line 
     (both GPT-5 and gpt-oss-20b achieved a score of 5 on the set of 10 LSAT questions).}
     \label{fig:performance_comparison}
@@ -623,7 +622,7 @@ Perceived performance did not differ significantly across conditions, $F(2, 553)
 
 \begin{figure}[!htp]
     \centering
-    \includegraphics[width=0.7\linewidth]{images/violin_estimation_error.pdf}
+    \includegraphics[width=0.7\linewidth]{violin_estimation_error.pdf}
     \caption{Performance estimation bias (perceived-actual performance) across conditions. Positive values indicate overestimation.}
     \label{fig:violin_plot}
 \end{figure}
