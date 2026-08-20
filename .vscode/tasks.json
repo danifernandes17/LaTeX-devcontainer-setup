@@ -4,7 +4,7 @@
     {
       "label": "Compile LaTeX",
       "type": "shell",
-      "command": "latexmk -pdf -interaction=errorstopmode -file-line-error main.tex",
+      "command": "latexmk -pdf -interaction=errorstopmode -file-line-error main.tex && latexmk -c main.tex",
       "group": {
         "kind": "build",
         "isDefault": true
