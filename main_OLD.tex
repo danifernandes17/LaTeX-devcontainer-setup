@@ -1,0 +1,975 @@
+%%
+%% This is file `sample-acmlarge.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,journal,bibtex,acmlarge')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-acmlarge.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[acmlarge,review=true, anonymous=true]{acmart}
+%%
+
+\usepackage{fontawesome}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{dcolumn} %Aligning numbers by decimal points in table columns
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\usepackage{float}
+\usepackage{subcaption}
+ \usepackage{threeparttable} 
+\usepackage{todonotes}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\let\xtodo\todo
+\renewcommand{\todo}[1]{\xtodo[inline,color=green!50]{#1}}
+
+\definecolor{colortodo}{rgb}{0.9, 0.6, 0}    
+\definecolor{colordaniel}{rgb}{0, 0.7, 0.35}
+\definecolor{colorthomas}{rgb}{0.2, 0.4, 0.8}
+\definecolor{colorrobin}{rgb}{0.2, 0.8, 0.8}
+\definecolor{colordaniela}{rgb}{0.8, 0.2, 0.7}
+\definecolor{colornotfinal}{rgb}{0.95, 0.2, 0.2} 
+\definecolor{colorlev}{rgb}{0.4, 0.2, 0.2}
+
+\newcommand{\tba}{\textcolor{colortodo}
+{\faExclamationTriangle\ \texttt{TBA}}}
+
+\newcommand{\nf}[1]{\textcolor{colornotfinal}{#1}} % not final
+
+\newcommand{\thomas}[1]{\textcolor{colorthomas}{\textbf{\faComment~Thomas:} #1}}
+
+\newcommand{\lev}[1]{\textcolor{colorlev}{\textbf{\faComment~Lev:} #1}}
+
+\newcommand{\daniela}[1]{\textcolor{colordaniela}{\textbf{\faComment~Daniela:} #1}}
+
+\newcommand{\daniel}[1]{\textcolor{colordaniel}{\textbf{\faComment~Daniel:} #1}}
+
+\newcommand{\robin}[1]{\textcolor{colorrobin}{\textbf{\faComment~Robin:} #1}}
+
+\newcommand{\todolist}[1]{%
+  \noindent\textcolor{colortodo}{\rule{\linewidth}{0.2pt}}\\[0.2em]%
+  \noindent\textcolor{colortodo}{\faWrench~\textbf{TODO:} #1} \\
+  \noindent\textcolor{colortodo}{\rule{\linewidth}{0.2pt}}\\
+}
+
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmlicensed}
+\copyrightyear{2018}
+\acmYear{2018}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%%
+%% These commands are for a JOURNAL article.
+\acmJournal{IMWUT}
+\acmVolume{37}
+\acmNumber{4}
+\acmArticle{111}
+\acmMonth{8}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+
+
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Explaining Too Much? How Large Language Model Reasoning Traces Shape Metacognition in Human–AI Interaction}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+
+
+\author{Daniela Fernandes}
+\email{daniela.dasilvafernandes@aalto.fi}
+\orcid{0009-0006-1332-7485}
+\affiliation{%
+  \institution{Aalto University}
+  \city{Espoo}
+  \country{Finland}
+}
+
+\author{Daniel Buschek}
+\email{daniel.buschek@uni-bayreuth.de}
+\orcid{0000-0002-0013-715X}
+\affiliation{%
+  \institution{University of Bayreuth}
+  \city{Bayreuth}
+  \country{Germany}
+}
+
+
+\author{Thomas Kosch}
+\email{thomas.kosch@hu-berlin.de}
+\orcid{0000-0001-6300-9035}
+\affiliation{%
+  \institution{HU Berlin}
+  \city{Berlin}
+  \country{Germany}
+}
+
+
+\author{Robin Welsch}
+\email{robin.welsch@aalto.fi}
+\orcid{0000-0002-7255-7890}
+\affiliation{%
+  \institution{Aalto University}
+  \city{Espoo}
+  \country{Finland}
+}
+
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Fernandes et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+%\todo{What is the specific problem addressed?}
+%\todo{What have you done?}
+%\todo{What did you find out?}
+%\todo{What are the implications on a larger scale?}
+%Generative AI is increasingly embedded in reasoning-, learning-, and creativity-oriented workflows. In parallel, 
+%Large Language Model (LLM) interfaces are becoming more verbose, increasingly exposing \textit{reasoning traces} alongside final answers. 
+
+Large language model interfaces are increasingly verbose, exposing intermediate reasoning traces alongside final answers. Traces are framed as transparency mechanisms, yet it is unclear how people use them to solve problems.  We report a preregistered between-subjects study ($N=559$) in which participants solved ten Law School Admission Test-style reasoning problems under one of three conditions: an \textit{Answer-only} baseline, a \textit{Full reasoning trace} revealed before the answer, and a \textit{Summary of reasoning} presented alongside the answer. Full traces did not improve task performance; participants in the \textit{Full-trace} condition performed significantly worse than those given the model's answer alone, while summaries merely preserved performance at the no-trace baseline. Across all conditions, participants substantially overestimated their performance, with the largest miscalibration under full traces. Despite delivering no performance benefit, both trace conditions were rated as more trustworthy. We argue that reasoning traces are best understood as user-facing interface artifacts rather than as transparent windows into the model's inner workings, and that calibration is unlikely to emerge from the traces themselves. By empirically contrasting trace designs, we uncover mechanisms through which traces shape HAI and derive design principles that balance effectiveness, calibration, user experience, and usability.
+
+
+% Large Language Model (LLM) interfaces are increasingly verbose, exposing intermediate reasoning traces alongside final answers. 
+% While traces are framed as mechanisms for transparency, prior work suggests that fluent justifications can induce a sense of understanding and shift how people monitor their own decisions. How reasoning traces shape user metacognition in Human–AI Interaction (HAI), however, remains poorly understood.
+% %While traces are often framed as a mechanism for transparency and user sensemaking, it remains unclear whether they reliably support users’ decision-making and task performance. Prior work on explanation interfaces points to additional risks. High-verbosity outputs may induce a sense of understanding, increase overreliance and shift how people monitor their own decisions. Thus, a key open question is how reasoning traces shape metacognition in Human-AI Interaction (HAI) and calibrate reliance on AI.
+% We report a preregistered between-subjects study ($N=559$) in which participants solved ten Law School Admission Test-style reasoning problems with AI assistance and were exposed to different shapes of reasoning traces under one of three conditions: \textit{Answer-only} baseline (C1), \textit{Full reasoning traces} revealed before the answer (C2), and a \textit{Summary of reasoning traces} presented alongside the answer (C3).  Full traces did not improve task performance. Participants in the Full-trace condition performed significantly worse than those given only the model's answer, while summarized traces merely preserved performance at the no-trace baseline. Across all three conditions, participants substantially overestimated their performance, and this miscalibration was largest under full traces. Despite delivering no performance or calibration benefit, both trace conditions were rated as more trustworthy. We argue that reasoning traces are best understood as user-facing interface artifacts rather than transparent windows into the inner working of the model, and that calibration is unlikely to emerge from the trace itself. By systematically contrasting reasoning trace designs, we uncover mechanisms through which reasoning traces influence human–AI interaction and derive design principles that balance effectiveness, calibration, user experience and usability.
+
+%Large language model (LLM) interfaces increasingly expose their intermediate reasoning traces alongside final outputs. Yet it remains unclear whether such traces help users make better decisions, increase overconfidence, or improve the calibration of metacognitive judgments. We report a between-subjects experiment in which participants completed logical reasoning tasks under three interface conditions: (1) no reasoning trace (final answer only), (2) full reasoning trace revealed before the final answer, and (3) a concise summary of the reasoning plus the final answer. We examine what benefits or drawbacks these formats have for task accuracy and efficiency, how they shape metacognitive sensitivity (confidence–accuracy alignment) and trust calibration, and why users encounter distinct usability and user-experience trade-offs across designs. By systematically contrasting reasoning trace designs, we uncover mechanisms through which reasoning traces influence human–AI interaction and derive design principles that balance effectiveness, calibration, user experience and usability.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+    <concept>
+        <concept_id>10003120.10003121.10003128</concept_id>
+        <concept_desc>Human-centered computing~Human-Computer Interaction (HCI)</concept_desc>
+        <concept_significance>300</concept_significance>
+    </concept>
+ </ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Human-centered computing~Human computer interaction (HCI)}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Metacognition, Reasoning Traces, Large Language Models, Overconfidence}
+
+\received{20 February 2007}
+\received[revised]{12 March 2009}
+\received[accepted]{5 June 2009}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\todo{OLD VERSION, please compile the new main.tex file}
+
+\section{Introduction}
+Large Language Models (LLMs) are becoming increasingly verbose, with users now exposed not only to final outputs but also to intermediate ``reasoning traces'', chain-of-thought-style outputs that resemble the model's inner workings \cite{barez2025chain}. Showing reasoning traces carries the promise of transparency. They are meant to help users make sense of AI answers and scaffold complex workflows \cite{6645235}. Yet prior research in XAI and HCI reports mixed findings. High verbosity can induce an illusion of understanding (e.g., illusions of knowledge \cite{fisher2021harder}), and fluent justifications may lead users toward over-reliance even when the underlying conclusion is wrong \cite{10.1145/3397481.3450639}. Moreover, a model's ``chain of thought'' is not always faithful to its intermediate steps and can function as a polished, but misleading, justification \cite{10.5555/3666122.3669397,lindsey2025biology, barez2025chain}. Despite this, providers explicitly market reasoning traces as tools for transparency \cite{}, and while generating these traces is costly, traces are billed at output rates and largely increase the amounts of tokens as compared to a direct answer \cite{}. The design question is thus whether exposing reasoning traces delivers the transparency providers claim, with benefits for its users.
+%Recent interpretability work further explores this: internal model computations and chain-of-thought outputs can diverge, and what the model outputs as a ``reasoning trace'' may not faithfully represent how it actually arrived at its answer \cite{lindsey2025biology, barez2025chain}. %\footnote{Recent interpretability work further explores this: internal model computations and chain-of-thought outputs can diverge, and what the model outputs as a ``reasoning trace'' may not faithfully represent how it actually arrived at its answer \cite{lindsey2025biology, barez2025chain}. For the purposes of this study, we introduce a different reframing. Rather than treating traces as ground-truth windows into model cognition, we treat them as user-facing interface artifacts, e.g., a type of XAI output that users respond to regardless of its internal validity. The relevant question for our study is not whether the trace accurately reflects the model's computation, but whether and how it shapes the user's metacognitive processes. This framing is consistent with the XAI literature's distinction between proxy explanations and faithful explanations \cite{barez2025chain, jacovi-goldberg-2020-towards, 10.5555/3666122.3669397}, and it positions the faithfulness problem as a further design risk: users may calibrate their reliance on outputs that are themselves unreliable representations of model "thinking", amplifying the metacognitive consequences.}
+
+At the same time, while AI has the potential to improve task performance \cite{10.1145/3411764.3445717, steyvers_bayesian_2022,zulfikar_memoro_2024}, users often believe they perform better when assisted by AI \cite{FERNANDES2026108779, kloft2023ai, villa2023placebo} and struggle to align confidence with correctness. This highlights the core challenge of understanding not only how people can make better decisions with AI, but how AI interfaces shape \textit{metacognition}, that is, users' ability to monitor and evaluate their own decisions and regulate reliance during interaction with AI.
+
+
+In this paper, we investigate how the shape of reasoning traces affects performance and metacognition in human-AI reasoning contexts. %(in our study, we treat reasoning traces as a form of explainability for LLMs).
+More specifically, we ask (1) what the benefits and drawbacks of different reasoning-trace formats are, (2) how these formats affect task performance, (3) how they shape metacognition, and (4) whether they can support calibrated reliance on AI. 
+
+To address these questions, we present findings from a preregistered between-subjects experiment (N = 559) in which participants solved ten LSAT-style logical reasoning problems with AI assistance under one of three interface conditions that span the practically relevant design space for exposing model reasoning: 
+\begin{itemize}
+    \item \textit{Answer-only} condition (N = 187): An answer-only baseline that reflects early LLM interfaces.
+    \item \textit{Full-trace} condition (N = 183): A full reasoning trace shown before the model's final answer, which remained hidden behind a button press. This ensured that participants engaged with the trace itself rather than the verdict, and mirrored the verbose outputs of current open-weight reasoning models.
+    \item \textit{Summary-trace} condition (N = 189): A summary of reasoning traces presented together with the answer, of the kind now adopted by several commercial systems (see XXXLINKS TO WEBSITES). 
+\end{itemize}
+
+These three formats capture the dominant ways in which reasoning is currently surfaced to users and allow us to control verbosity in our study. By isolating the \textit{content} of the trace from how it is revealed, we can ask whether traces help, hurt, or need to be calibrated, and at what level of verbosity, if any, they support metacognitive accuracy rather than merely inflating the appearance of understanding. LSAT-style reasoning has been established as a robust measure of both performance and metacognition \cite{vaccaro2024combinations}, has been used in prior human-AI interaction research \cite{FERNANDES2026108779}, and serves as a benchmark for evaluating LLMs \cite{katz2024gpt}. 
+
+Across five outcomes (task performance, metacognitive accuracy, cognitive load, trust, and usability), our results converge on the pattern that more reasoning-trace output did not improve task performance. Participants in the \textit{Full-trace} condition performed worse than those in the \textit{Answer-only} condition ($M$=5.46 \textit{vs}. $M$=6.18 items correct) while summarized traces merely preserved performance at the no-trace baseline. Across all three conditions, participants substantially overestimated their performance, and this miscalibration was largest under the \textit{Full-trace} condition. 
+Despite these costs, both trace conditions (\textit{Full-trace} and \textit{Summary-trace}) were rated as more trustworthy and as offering a better user experience than the \textit{Answer-only} baseline, even though they delivered no performance or calibration benefit.
+%Yet trace conditions were rated as more trustworthy and as offering a better user experience than the answer-only baseline, despite delivering no performance or calibration benefit.
+
+
+% To address this gap, we present findings from a between-subjects experiment on the Law School Admission Test (LSAT)-style reasoning tasks, comparing three interface designs that vary the form of reasoning traces (\textit{Answer-only} (C1), \textit{Full reasoning traces} (C2), or a \textit{Summary of reasoning traces} (C3)). The LSAT-reasoning part has shown to be a good performance measure and metacognition \cite{NATURE HUMAN BEHAVIOR PAPER} that has been used in HAI research \cite{FERNANDES2026108779} but also for benchmarking AI models \cite{}. We report on metacognitive accuracy, sensitivity, and trust calibration alongside performance and user experience.
+
+
+Our contributions are threefold. First, we provide a \textit{controlled comparison of reasoning-trace formats} in terms of cognitive and metacognitive performance. We isolate verbosity as a single design dimension, showing that more verbose traces can reduce performance rather than support it. 
+
+Second, we show that \textit{full reasoning traces impair cognitive performance} relative to an answer-only baseline and produce the largest overestimation gap, whereas summaries preserve performance without improving metacognitive accuracy across conditions. This implies that calibration is unlikely to emerge from the trace itself. %which implies that more reasoning output does not yield better calibration. 
+
+Third, we translate these findings into \textit{concrete design directions} for trace-based LLM interfaces: We argue that reasoning traces are best understood as user-facing interface artifacts rather than windows into model cognition. Thus, metacognitive support must instead be scaffolded by interactions that elicit users' own reasoning before exposing the model's reasoning traces.
+%and must instead be scaffolded by interactions that elicit the user's own reasoning before exposing the model's reasoning traces.
+
+% Large Language Models are becoming increasingly verbose, with users now being exposed to both the final output and the model's intermediate "reasoning traces" (chain-of-thought style outputs). 
+% Reasoning traces carry the promise of transparency, improving users' understanding of the AI's output and scaffolding complex workflows. However, prior research on XAI and HCI report mixed findings. High verbosity might induce a sense of understanding (e.g., illusions of knowledge, \cite{}), influencing users towards overreliance on AI due to the apparent fluency. Moreover, the model's chain of thought is not always faithful to intermediate steps, occasionally serving as polished but misleading justifications
+
+% Despite prior work showing AI has the potential to increase task performance \cite{}, users believe they perform better when assisted by AI \cite{}, failing to align confidence and correctness. We thus face the core challenge of understanding not only how people can make better decisions when using AI but also how such interfaces shape metacognition (e.g., the ability to monitor and evaluate one's own decisions).
+
+% We thus attempt to clarify the effects of reasoning traces on metacognition, more specifically, what are the benefits and drawbacks of different reasoning trace formats, what are the effects on task performance and decision accuracy, how it affects metacognitive sensitivity and if it can help regulate and calibrate reliance in AI. We aim to observe if users experience different usability and user-experience trade-offs across formats.
+
+
+% Our contributions are threefold. We provide a systematic comparison of reasoning-trace formats in a controlled study of human-AI interaction; we report empirical insights on metacognitive accuracy, sensitivity, and trust calibration alongside performance and user experience; and we clarify actionable design principles (\textit{Tools for Thought strategies}) for calibration-aware interfaces to LLM reasoning traces.
+%We discuss how future work aims to clarify actionable design principles for calibration-aware interfaces for LLM reasoning traces and highlight design principles to contribute to more effective explanation interfaces.
+
+
+% \textbf{Research Questions}: \daniela{needs to be merged into text}
+
+% RQ1 (Metacognitive accuracy):
+% Do summarized reasoning traces improve users’ awareness of their own performance, relative to full traces and to no traces?
+% %H1: $C3 \gt C2 \gt C1$; reduced overestimation. Measures: bias (perceived − actual),  Sensitivity: trial-level confidence–accuracy AUC.
+
+% RQ2 (Cognitive load): Do full reasoning traces increase cognitive load compared to summaries or no traces?
+% %H2:$C2 \gt C1$ and $C2 \gt C3$; expect $C3 \gtrsim C1$. Measures: NASA-TLX (raw)
+
+% RQ3 (Trust and confidence): Do full reasoning traces elevate users’ confidence and trust in the AI relative to summaries and no traces?
+% %H3: $C2 \geq C3 \gt C1$. Measures: mean confidence (0–100), XAI Trust scale.
+
+% RQ4 (Objective performance): Do reasoning traces (full or summary) improve task accuracy relative to answer-only?
+% %H4: $ C2 \geq C3 \gt C1$. Measure: accuracy (proportion correct across items).
+
+% RQ5: When using AI on reasoning tasks, are people more likely to prefer a summary of the reasoning traces as compared to being exposed to full reasoning traces? 
+% % H5: $C1\geq C3\gt C2$ (System Usability Scale)
+
+
+
+
+
+\section{Related Work}
+
+In this section, we focus on the role of metacognitive processes in human cognition and human–AI interaction. We first introduce central concepts of human metacognition and examine how mechanisms such as self-monitoring and evaluation influence problem-solving, learning, and decision-making. We then consider how these processes are affected when people collaborate with AI systems, highlighting both opportunities and risks for cognitive performance and user judgment. Finally, we introduce key concepts related to reasoning traces and AI explanations, which aim to increase transparency but may also introduce new challenges for calibration and usability.
+
+\subsection{Metacognition and Human Reasoning}\label{sec:human_metacognition}
+Metacognition refers to the processes by which people monitor, plan, and evaluate their own thinking \cite{fleming2024metacognition}. These processes are essential for complex problem-solving, learning, and optimizing behavior. Two primary constructs have been emphasized in psychological research: metacognitive accuracy and metacognitive sensitivity.
+
+Metacognitive accuracy describes how closely individuals' self-evaluations align with their actual performance \cite{fleming2024metacognition, colombatto2023illusions}. High accuracy allows people to recognize their limitations and make informed adjustments, such as seeking more information, revising a strategy, or making a conservative choice. Accuracy can be further decomposed into bias (systematic over- or underestimation) and noise (random fluctuations) \cite{fiedler2019metacognition}.
+
+Metacognitive sensitivity refers to the ability to discriminate between correct and incorrect judgments, often measured through confidence ratings after the decision \cite{fleming2024metacognition}. High metacognitive sensitivity entails that an individual's confidence ratings accurately reflect their performance: high confidence corresponds to correct judgments, and low confidence to incorrect ones.
+
+Both constructs show substantial individual differences \cite{kelemen2000individual, ackerman2017meta} and are affected by external aids. People often misattribute externally generated information to themselves \cite{johnson_source_1993}, and reading fluent explanations inflates perceived understanding even when comprehension has not actually improved \cite{fisher2021harder}. These findings establish an underlying expectation that any system that provides articulate external reasoning may shift users' self-evaluations, regardless of whether it improves their actual performance.
+%Research shows substantial individual differences in metacognitive ability \cite{kelemen2000individual; ackerman2017meta}. While some individuals monitor and adjust their performance effectively, others fail to do so, particularly when overreliance on external aids undermines self-evaluation.
+
+%Design research has begun to apply these insights to interactive systems. Tailoring AI interactions to users’ metacognitive processes, for example by crafting prompts, decomposing complex tasks, or allowing users to edit AI outputs, can enhance performance, mitigate errors, and foster a sense of agency \cite{tankelevitch2023metacognitive; draxlerghost24}. Similarly, small interface modifications such as introducing natural language uncertainty cues (e.g., "I am not sure, but...") can reduce overreliance and improve accuracy \cite{kim2024m}. However, it can also lead to deskilling, as it has been seen when generative AI improves short-term performance but undermines learning and long-term ability \cite{bastani2024generative; rafner2022deskilling; Kobiella2024}. Designing human–AI systems that explicitly support metacognition is therefore crucial to reduce deskilling while increasing user agency and control.
+\subsection{Metacognition in Human-AI Interaction}
+
+Augmenting human intellect has long been a core theme in HCI, as highlighted by \citet{engelbart1962augmenting}. Research has emphasized the potential of AI for improving human performance \cite{10.1145/3411764.3445717, steyvers_bayesian_2022,zulfikar_memoro_2024}.
+%Prior work shows that LLMs can substantially improve human task performance \cite{}.
+However, performance gains come with hidden risks related to how users perceive and rely on these systems. Users frequently hold inflated expectations of their performance with AI and fail to monitor their actual outcomes \cite{FERNANDES2026108779, kloft2023ai, villa2023placebo, kosch2023placebo}. Recent discussions also raise concerns about biases, skill loss, and deskilling, especially when generative AI improves short-term performance but undermines learning and long-term ability \cite{bastani2024generative, rafner2022deskilling, Kobiella2024, stadler_cognitive_2024}.
+
+%More specifically, a core issue concerns how users interact with AI and its impact on human metacognition. Metacognition refers to the processes by which people monitor, plan, and evaluate their own thinking \cite{fleming2024metacognition}. These processes are central to complex problem-solving, learning, and optimizing behavior. 
+
+
+%Recent discussions raise concerns about biases, skill loss \cite{bastani2024generative}, and deskilling, especially when generative AI improves short-term performance but undermines learning and long-term ability \cite{stadler_cognitive_2024}. In addition, research shows substantial individual differences in metacognitive ability: while some individuals monitor and adjust their performance effectively, others do not \cite{kelemen2000individual, ackerman2017meta}. In AI-assisted contexts, it appears that a limitation of human potential may therefore be primarily metacognitive, involving challenges in planning, monitoring, evaluating, and understanding AI interactions.
+
+In AI-assisted tasks, the central limitation of human performance therefore appears to be primarily metacognitive, involving challenges in planning, monitoring, evaluating, and understanding AI interactions \cite{tankelevitch2023metacognitive}. A plausible explanation is that current AI interfaces are suboptimal at supporting metacognition. Design interventions that target this layer can reduce over-reliance, enhance performance, and foster a sense of agency (e.g., tailoring AI interactions to users' metacognitive processes through prompt design, task decomposition, or natural-language uncertainty cues, e.g., ``I'm not sure, but...'') \cite{tankelevitch2023metacognitive, draxlerghost24, kim2024m}. 
+
+Recent work has also begun to develop dedicated instruments for measuring metacognition in this setting. The \textit{Collaborative AI Metacognition Scale} captures the extent to which users actively plan, monitor, and evaluate their own thinking while working with AI. This treats metacognition not as a stable trait but as a process that interfaces can support \cite{Sidra03042026}. Consequently, designing human–AI systems that explicitly support metacognition is crucial to reduce deskilling while maintaining user agency and control. What remains unclear is how the format of an AI's reasoning output shapes these processes and whether the same explanation that supports monitoring in one form may inflate perceived understanding in another.
+
+%Thus, interactions with AI impose new metacognitive demands on users~\cite{tankelevitch2023metacognitive}. A plausible explanation is that current AI interfaces are suboptimal at supporting metacognition \cite{kloft2023ai, kosch2023placebo, villa2023placebo}. Users frequently hold inflated expectations of their performance with AI and fail to monitor their actual outcomes \cite{FERNANDES2026108779}. In this context, metacognition provides a framework for understanding Generative AI's usability challenges. Designing human-AI systems that explicitly support metacognition is therefore crucial to reduce deskilling while maintaining user agency and control. Metacognitive accuracy describes how closely individuals’ self-evaluations align with their actual performance \cite{fleming2024metacognition, colombatto2023illusions}. High accuracy allows people to recognize limitations and make informed adjustments, such as seeking more information or revising a strategy. % or making a conservative choice.
+
+
+\subsection{Reasoning Traces and AI Explanations}
+AI tools, such as ChatGPT, offer real-time guidance and feedback, which may improve task performance and potentially metacognitive accuracy. For example, by providing immediate corrections and explanations, generative AI could help users better align their confidence with actual performance, possibly reducing errors in self-assessment and providing opportunities to further improve their interactions with the system.
+
+Currently, interfaces progressively expose reasoning traces, step-by-step justifications that resemble the model’s ``chain of thought''. While AI traces promise transparency, prior work shows that explanations can sometimes be uninformative, or even ignored by users \cite{vasconcelos2023explanations}. They can also introduce new biases: Full reasoning traces may increase perceived understanding without improving users' ability to evaluate correctness. More broadly, people often misattribute externally generated information to themselves \cite{johnson_source_1993}  and \citet{fisher2021harder} show that reading fluent explanations inflates perceived understanding. Related work suggests that users can mistake the AI's capabilities for their own, inflating performance estimates and lowering metacognitive accuracy, despite objective performance gains \cite{tankelevitch2023metacognitive, fleming2024metacognition, fisher2021harder}.
+
+%AI may blur self \textit{vs} AI output distinction, causing source-monitoring errors \cite{johnson_source_1993}), and fostering an "illusion of knowledge". 
+%For instance, \citet{fisher2021harder} show that reading fluent explanations inflates perceived understanding. Related work \cite{tankelevitch2023metacognitive, fleming2024metacognition, fisher2021harder} suggests that users can mistake the AI’s capabilities for their own, inflating performance estimates and lowering metacognitive accuracy, despite objective performance gains.
+
+Studies on Explainable AI (XAI) report mixed effects. Traces can help users follow complex steps and improve task accuracy, but they may introduce new cognitive biases \cite{bertrand2022cognitive} and anchor users to the model's conclusion even when it is wrong \cite{10.1145/3397481.3450639}. Even placebic explanations, i.e., content-free justifications that convey no diagnostic information, can influence users' trust in a system, indicating that the presence of an explanation can shape user judgment independently of its informational content \cite{eiband2019impact}. Long, detailed explanations can also increase cognitive load and time-on-task without proportional benefit, while concise justifications can be easier to use but risk omitting information relevant for evaluation. In addition, ``chains of thought'' can be misleading and are neither necessary nor sufficient for trustworthy interpretability \cite{barez2025chain}, as recent work shows that a model's ``chain-of-thought'' output and the internal computations that produce its answer can diverge. Thus, what the model verbalizes as ``reasoning'' may not faithfully represent how it actually arrived at its answer \cite{lindsey2025biology, 10.5555/3666122.3669397}. Also \citet{vasconcelos2023explanations}argue that there is cognitive cost of engaging with an explanation that can affect over-reliance, predicting that effortful explanations reduce inappropriate reliance on AI. Our Full-trace condition operationalizes a high-cost variant of this design and provides a direct test of whether this moderation generalizes to LLM reasoning traces.
+%Long, detailed explanations can also increase cognitive load and time-on-task, without proportional benefit. Conversely, concise justifications can be easier to use but risk omitting information relevant for evaluation. In addition,  chains of thought can be misleading and are neither necessary nor sufficient for trustworthy interpretability \cite{barez2025chain}. 
+
+These mixed effects highlight that while metacognition is critical to human problem-solving and decision-making, it remains underexplored in the context of AI-assisted reasoning and HAI. Current systems often improve performance without supporting calibration, and explanation formats such as reasoning traces may further complicate achieving this balance. Explanations vary widely in verbosity, ranging from no traces displayed to short summaries to full ``chain-of-thought'' outputs, yet the literature has not isolated this dimension or examined how it shapes users' metacognitive processes during AI-assisted reasoning tasks.
+
+
+%Current systems often improve performance without supporting calibration, and explanation formats such as reasoning traces may further complicate achieving this balance. These gaps motivate our study, which systematically investigates the benefits and drawbacks of reasoning traces for task performance, how they shape metacognition and calibration, and the usability and user-experience trade-offs users might encounter across explanation formats.
+%Our study isolates the format dimension of reasoning traces (none \textit{vs} full \textit{vs} summary) to test whether traces provide benefit, cause harm, or can be calibrated. For the purposes of this study, rather than treating traces as ground-truth windows into model cognition, we treat them as user-facing interface artifacts, i.e., a type of XAI output that users respond to regardless of its internal validity. The relevant question for our study is not whether the trace accurately reflects the model's computation, but whether and how it shapes the user's metacognitive processes. This framing is consistent with the XAI literature's distinction between proxy explanations and faithful explanations \cite{barez2025chain, jacovi-goldberg-2020-towards, 10.5555/3666122.3669397}, and it positions the faithfulness problem as a further design risk: users may calibrate their reliance on outputs that are themselves unreliable representations of model "thinking", amplifying the metacognitive consequences.
+
+
+
+\section{Research Model}
+
+%Current systems often improve performance without supporting calibration, and explanation formats such as reasoning traces may further complicate the task of achieving this balance. These gaps motivate 
+Our study systematically investigates the benefits and drawbacks of reasoning traces for task performance, how they shape metacognition and calibration, and the usability and user-experience trade-offs users may encounter across explanation formats.
+
+%It isolates the format dimension of reasoning traces (none vs. full vs. summary) to test whether traces provide benefit, cause harm, or can be calibrated. %Rather than treating traces as ground-truth windows into model cognition, we treat them as user-facing interface artifacts: 
+Note that we investigate traces from a user-facing perspective, that is, as a class of XAI output that users respond to regardless of its internal validity. Thus, the relevant question for our study is not whether a trace accurately reflects the model's computation, but whether and how it shapes the user's metacognitive processes. This framing is consistent with the XAI literature's distinction between proxy and faithful explanations \cite{barez2025chain, jacovi-goldberg-2020-towards, 10.5555/3666122.3669397}, and positions the faithfulness problem as a further design risk: Users may calibrate their reliance on outputs that are themselves unreliable representations of model ``thinking'', amplifying the metacognitive consequences.
+
+%The literature reviewed above motivates a focused contrast. Reasoning traces are increasingly surfaced to users in the name of transparency, yet the evidence on whether they support better reasoning, calibrated reliance, and a workable UX is scarce. We treat the content format of the trace as a single design dimension from nothing to full, over summarized, and ask how variation along this dimension shapes performance, metacognition, trust, cognitive load, and usability.
+
+We treat the content format of the trace as a single design dimension, ranging from no reasoning traces to summaries to full reasoning traces, and ask how variation along this dimension shapes performance, metacognition, trust, cognitive load, and usability. 
+
+Five preregistered research questions and corresponding hypotheses structure this contrast:
+
+\begin{itemize}
+    \item \textbf{RQ1 Metacognitive accuracy:} As fluent or verbose external information has been shown to inflate perceived understanding without improving judgment \cite{fisher2021harder, johnson_source_1993}, we expect summaries of reasoning traces (\textit{Summary-trace} condition) to support more accurate self-evaluation than full reasoning traces or no traces conditions. That is H1: \textit{Summary-trace}$>$\textit{Full-trace} $>$ \textit{Answer-only} in metacognitive accuracy. 
+    \item \textbf{RQ2 Cognitive load:} Furthermore, as long explanations increase reading time and effort without proportional benefit \cite{vasconcelos2023explanations, bertrand2022cognitive}, we expect full traces to impose the highest cognitive load. That is H2: \textit{Full-trace} $>$ \textit{Answer-only} and \textit{Full-trace} $>$ \textit{Summary-trace}; \textit{Summary-trace} $\gtrsim$ \textit{Answer-only} on the NASA-TLX. 
+    \item \textbf{RQ3 Trust and confidence:} Because fluent justifications inflate perceived understanding \cite{fisher2021harder}, and traces can shape user judgment independently of their content validity, triggering the processing-fluency heuristic \cite{alter_overcoming_2007}, the most verbose format (Full-trace) should yield the highest confidence and trust. That is H3: \textit{Full-trace} $\geq $\textit{Summary-trace} $>$ \textit{Answer-only}.
+    \item \textbf{RQ4 Objective performance:} As explanations can scaffold complex reasoning \cite{10.1145/3411764.3445717,tankelevitch2023metacognitive}, we predict that any trace (Full-trace and Summary-trace) will improve accuracy over an answer-only baseline. That is H4: \textit{Full-trace} $\geq$ \textit{Summary-trace} $>$ \textit{Answer-only}.
+    \item \textbf{RQ5 Usability preference:} Finally, because concise justifications are typically easier to use while verbose ones risk overwhelming users \cite{}, we expect summaries to be preferred over full traces. That is H5: \textit{Answer-only} $\geq$ \textit{Summary-trace} $>$ \textit{Full-trace} on the SUS.
+\end{itemize} 
+
+Taken together, these predictions imply that reasoning traces should yield more trust, more confidence, and more accurate task performance and, at least in summarized form, lead to better calibration, with cognitive load as the main cost of full traces.
+
+\section{Method}
+
+In the following, we motivate and document our methodological choices when conducting our Study. The research software and the analysis with all associated measures can be found at [anonymized for review]. All data collected for the purpose of our paper and analysis scripts can be found at \daniela{add osf anonymous link}.
+
+\subsection{Study Design}
+We developed a custom web-based interface that displayed an AI chat window alongside a survey interface in a side-by-side layout. We build on the implementation introduced by \citet{FERNANDES2026108779}, which examined how AI assistance can improve performance while undermining metacognitive accuracy. We extended this approach to focus on LLM reasoning traces. % We developed a custom web-based interface that displayed an AI chat window alongside a survey interface in a side-by-side layout. Participants completed ten LSAT logical reasoning items, presented in randomized order.
+The study uses a between-subjects design with three conditions: \textit{Answer-only}, \textit{Full-trace}, and \textit{Summary-trace}. The planned sample is $N=570$ ($190$ per condition), based on an a priori power analysis targeting the smallest effect of interest.
+
+\subsubsection{Models and interface rationale.}
+Each problem appeared on the left-hand side of the screen, while an AI chat (using GPT-5 or gpt-oss-20b, depending on condition) was displayed on the right. %Model identity (GPT-5 or gpt-oss-20b) was not disclosed. 
+We used OpenAI's ChatGPT due to its widespread adoption in cognitive performance tasks \cite{bastani2024generative,draxlerghost24,draxler2023gender} and because recent reasoning models allow access to a reasoning summary. Since GPT-5 provides summaries rather than full reasoning traces, we employed gpt-oss-20b for \textit{Full-trace} condition, as it openly exposes complete reasoning traces. GPT-5 was used in conditions \textit{Answer-only} and \textit{Summary-trace} (see Section~\ref{sec:task description}). We note that some chat interfaces, such as OpenAI's ChatGPT, typically present reasoning traces as a drop-down element that users can optionally expand. This structure was not included as a fourth condition in the current study as it would have brought another factor to the experimental design. %We focused on the content format of the trace (none vs. full vs. summarized) rather than how traces are revealed by the user.
+
+
+\subsubsection{Stimuli control.}\label{sec:stimuli_control}
+To avoid confounding trace format with model answer quality, items were pre-screened so that gpt-oss-20b and GPT-5 achieve the same performance on retained items (reducing model-ability confounds), while intentionally including a small number of items for which that shared answer was incorrect. The final set comprised ten items meeting these criteria. The models' performance on the ten retained LSAT tasks was $M=5.00$. Model identity and any correctness annotations were not disclosed to participants.
+
+\subsection{Task Description}\label{sec:task description}
+
+Participants completed ten LSAT logical reasoning items, presented in randomized order. 
+The three experimental conditions were implemented as follows: In condition \textit{Answer-only}, participants saw only the model’s final answer. In condition \textit{Full-trace}, the model’s reasoning traces were displayed after each user prompt. Once the reasoning trace was shown, a ``\textit{Final Answer}'' button appeared, requiring participants to actively decide whether to view the model’s final answer or proceed with solving the reasoning problem without it. This workflow was deliberately designed to elicit a tentative answer from the participant before exposing them to the AI’s final answer, thereby encouraging independent reasoning prior to model influence. In condition \textit{Summary-trace}, the reasoning summary and the model’s final answer were presented together, sequentially. 
+
+After responding to each problem, on a trial-level, participants indicated their confidence by answering the question "\textit{How confident are you that your response is correct?}" using a 100-step slider ranging from unsure to certain. These ratings were used to compute indices of \textit{metacognitive sensitivity}, that is, the degree to which confidence discriminated correct from incorrect responses (see Section~\ref{sec:human_metacognition}).
+
+In \textit{Full-trace} and \textit{Summary-trace}, as trial-level follow-up questions, participants also rated the perceived usefulness of the reasoning trace (\textit{``How useful did you find the reasoning for solving the problem?''}), whether it aligned with the model's final answer (\textit{``Do you believe the reasoning matched the final answer given by the model?''}) and how confident they were that the model's answer was correct based on the reasoning traces (\textit{``After reading the reasoning, how confident are you in the model’s final answer?''}). These questions were answered using a 100-step slider. Participants were additionally provided with an open text box to record any comments about the reasoning traces or the model's final answer. As a measure of metacognitive bias,  after completing all ten LSAT problems, participants provided a global estimate of their own performance by answering ``\textit{Using the AI, how many of the 10 logical reasoning problems do you think you solved correctly?}''. 
+
+To ensure engagement with the AI, participants were required to interact with the model at least once per problem before they could advance. Specifically, they needed to submit a prompt, wait for the AI's response to complete, enter their own answer, provide a confidence rating, and rate both the perceived usefulness and whether it aligned with the model's final answer. 
+Beyond this minimum requirement, participants were permitted unlimited free-text interaction with the AI throughout the task. They were encouraged to use their own logical reasoning skills while optionally drawing on the AI's assistance to analyze and answer each question.
+
+The LSAT reasoning task was selected for several key reasons. First, the LSAT is a widely recognized, real-world assessment used in high-stakes decision-making contexts such as law school admissions \cite{shultz2011predicting,wainer1995precision}. It has also been used as a benchmark for assessing large language model performance, making it particularly suitable for evaluating AI-assisted performance \cite{katz2024gpt}. An example of a logical reasoning question provided to participants was: Voltaire once said, ``Common sense is not so common.'' Which of the following most nearly parallels Voltaire’s statement? (1) Truth serum cannot contain the truth. (2) God must have loved the common man - he certainly made enough of them. (3) The common good is not necessarily best for everyone. (4) Jumbo shrimp may not actually be very big. (5) Good people may not necessarily have good sense.
+
+
+\subsection{Apparatus}
+
+
+%We built on the framework introduced by Fernandes et al. \cite{FERNANDES2026108779}, which examined how AI assistance improves performance but undermines metacognitive accuracy. To extend this approach, 
+Extending the setup by Fernandes et al. \cite{FERNANDES2026108779}, we developed a custom web-based interface that displayed an AI chat window alongside a survey interface in a side-by-side layout. This system used the models and realised the interface concepts as described above.
+
+%We used OpenAI’s ChatGPT (\verb|gpt-5|) due to its widespread adoption in cognitive performance tasks\cite{bastani2024generative,draxlerghost24,draxler2023gender} and because the latest reasoning models allow access to a reasoning summary. However, since GPT-5 provides only summaries and not full reasoning traces, we employed ChatGPT-oss-20b for Condition C2, as it openly exposes complete reasoning traces. GPT-5 was used in Conditions C1 and C3.
+
+%The three experimental conditions were implemented as follows. In  C1, participants saw only the model’s final answer. In Condition C2, the model’s reasoning traces were displayed after each user prompt. Once the reasoning trace was shown, a "Final Answer" button appeared, requiring participants to actively decide whether to view the model’s final answer or proceed with solving the reasoning problem without it. This workflow was deliberately designed to elicit a tentative answer from the participant before exposing them to the AI’s final answer, thereby encouraging independent reasoning prior to model influence. In Condition C3, the reasoning summary and the model’s final answer were presented together, sequentially.
+
+The custom interface was designed to support detailed data collection. All user interactions were logged, enabling qualitative chat analysis. Survey responses and chat logs were automatically recorded and saved at the end of the study. To streamline prompting, we included a button that copied each problem and its answer options to the clipboard so participants could easily paste them into the chat.
+
+The application was built with JavaScript and deployed via Netlify. The front end was connected to a Python proxy server hosted on Heroku, which forwarded chat messages to the OpenAI API and stored study data (survey responses and chat interactions) in a MongoDB database.
+
+
+\subsection{Participants}
+
+
+To explore individual differences in cognitive and metacognitive performance, we recruited a larger sample of 570 participants, with 190 participants per condition.
+We powered for the smallest effect of interest. We computed the proportion of \textit{p}-values < .05 to determine the optimal sample size for sufficient statistical power (80\%). With this, we found that a sample size of 570 participants is optimal for reliably detecting differences between the upper and lower quartiles in metacognitive accuracy.
+
+We recruited 570 English-fluent participants located in the USA through Prolific. We included an attention check, requiring participants to read a short description of the study and task. They then answered three multiple-choice questions, one about the topic (logical reasoning), another regarding which option to choose when solving the problems (the best one) and how they would be able to receive extra compensation.
+We excluded six participants for erroneous responses (e.g., exceeding the number of possible correct answers when estimating performance), three for low completion times, and one for incorrect age disclosure. % person said they were 136 yo
+Upon the qualitative data analysis stage, we found that one participant did not follow the study instructions and was therefore removed from the dataset.
+
+We further analyzed data from 559 participants (identified as female 253; identified as male 304, identified as non-binary 2; Age: $M$ = 40.77, $SD$ = 12.06). When asked to estimate their English fluency ("Estimate your fluency in the English language"), 521 participants reported themselves as native English speakers, 37 as fully fluent and one as conversationally fluent. No participants preferred not to disclose their language proficiency. 39 participants in our sample reported their highest educational degree to be a doctoral degree, 134 a higher tertiary education degree (Master's level), 232 a lower tertiary education degree (Bachelor's level) and 95 an upper secondary school / high school. 
+39 participants had taken the LSAT before; their performance was slightly lower, $M$ = 5.56, $SD$ = 1.59, compared to those who have not taken it, $M$ = 5.95, $SD$ = 1.40, thus they were not excluded from the sample. We collected informed consent from each participant before the study in accordance with the Declaration of Helsinki guidelines \cite{world2013world}. Each participant was compensated eight pounds per hour. In accordance with the TENK national guidelines (the Finnish National Board on Research Integrity), this study did not require ethics approval as it involved minimal risk to participants, with no intervention beyond standard practice and no collection of sensitive personal data. %Each participant was compensated £4 upon completion. 
+
+\subsection{Procedure}
+
+Upon entering the study via Prolific, participants were redirected to our custom web application. They were first presented with a description of the task and completed an attention check that was adapted to their assigned condition. In Condition \textit{Answer-only} (no reasoning traces), the attention check consisted of two questions: "\textit{What subject are you going to be answering questions about?}" and "\textit{Which answer choice should you select?}". In Conditions \textit{Full-trace} (full reasoning trace revealed before the final answer) and \textit{Summary-trace} (summary of reasoning trace plus the final answer), participants answered the same two questions, as well as an additional one, "\textit{How can you earn extra compensation?}". Extra compensation was given to incentivize participants to engage with the task and the model more attentively. If they were metacognitively accurate (e.g., their number of presumed right answers matched their actual number of right answers), they were told they would be given 0.40 pounds as extra compensation. Irrespective of their actual performance, all participants received extra compensation regardless of their performance.
+
+After providing informed consent to participate, participants completed a user expectations questionnaire. They were then briefly introduced to the task and allowed to test the chat interface to familiarize themselves with its functionality. The main task required participants to solve a series of LSAT logical reasoning problems presented in randomized order (see Section \ref{sec:task description}). Before submitting their final answer, participants were required to interact with the AI system (GPT-5 or GPT-oss-20b, depending on condition), ensuring at least one prompt per problem. They were free to continue interacting with the model as much as they deemed necessary through text-based exchanges.
+
+After each problem, participants reported their confidence in their response using a 100-step slider ranging from unsure to certain. In Conditions \textit{Full-trace} and \textit{Summary-trace}, they also rated the perceived usefulness of the reasoning trace and whether it aligned with the model’s final answer. They were additionally provided with an open text box to share any comments regarding the reasoning traces or the final answer.
+
+Upon completing all reasoning problems, participants again filled out the expectations questionnaire in the past tense. They subsequently answered a trust questionnaire, a task load questionnaire, and a user experience questionnaire and a metacognitive AI collaborative scale \cite{Sidra03042026}. Finally, participants provided demographic information, including age, gender, occupation, education level, English proficiency, and whether they had previously taken the LSAT.
+
+The study took, on average, 43 minutes to complete in Condition \textit{Answer-only}, 51 minutes in Condition \textit{Full-trace}, and 59 minutes in Condition \textit{Summary-trace}. After finishing, participants were redirected back to Prolific to register their completion of the study.
+
+\subsection{Analysis}
+We analyzed the data in two stages. First, we conducted quantitative analyses to compare the three experimental conditions on task performance (achieved and perceived performance), metacognitive accuracy (that is, how closely participants' estimated performance aligns with their actual performance), perceived workload through the NASA Task Load Index (TLX) \cite{HART1988139}, trust in XAI context \cite{measures_XAI}, user experience through the User Experience Questionnaire (UEQ-S) \cite{articleUEQS}, usability throught the System Usability Scale (SUS \cite{}), and self-reported metacognitive engagement through the Collaborative AI Metacognition Scale \cite{Sidra03042026}. Second, we conducted a qualitative thematic analysis of participants’ open-ended responses using an inductive thematic approach \cite{clarke2017thematic} to better understand how participants used the AI chatbot and how they perceived the reasoning traces. This analysis focused on the full reasoning traces condition (\textit{Full-trace}) and the summary of reasoning traces condition (\textit{Summary-trace}), where participants were exposed to reasoning traces. Responses were grouped into recurring interaction patterns, such as cognitive offloading, guided reasoning, independent verification, and perceived burden of the reasoning traces. We report the frequency of each theme and use representative quotes to interpret the quantitative findings.
+
+
+% Hypothesis:
+% \begin{enumerate}
+%     \item \textbf{H1} (metacognitive accuracy):When using AI on reasoning tasks, people are more aware of their performance if exposed to a summary of the model’s reasoning traces, as compared to no reasoning traces shown and with full traces. Prediction: C3>C2;C2>C1 (metacognitive accuracy - difference between perceived performance and actual performance)
+%     \item \textbf{H2} (cognitive load): When using AI on reasoning tasks, exposure to the full reasoning traces of the model is more likely to lead to a higher cognitive load as compared to a summary of the reasoning traces or no traces. Prediction: C2>C1;C3>=C1 (Workload, NASA Task Load Index)
+%     \item \textbf{H3} (trust and confidence): When using AI on reasoning tasks, people are more likely to be confident and trust in the AI when being exposed to the full reasoning traces of the model. Prediction: C2>=C3>C1 (Mean confidence, 0-100 scale; Trust: XAI Trust scale)
+%     \item \textbf{H4} (user performance): When using AI on reasoning tasks, people’s objective task performance is likely to improve when any reasoning trace is shown, as compared to not being exposed to any reasoning traces. Prediction: C2>=C3>C1(mean accuracy: proportion of correct answers across items)
+%     \item \textbf{H5} (usability): When using AI on reasoning tasks, people are more likely to prefer a summary of the reasoning traces as compared to being exposed to full reasoning traces. Prediction: C1>=C3>C2 (System Usability Scale).
+% \end{enumerate}
+
+
+\section{Results}
+
+\subsection{Metacognitive Accuracy}
+%Metacognitive accuracy refers to the difference between a user’s perceived performance and their actual performance. 
+
+
+%Achieved performance differed significantly across conditions, $F(2, 556) = 15.10$, $p < .001$, $\eta^2 = .052$. Participants in Condition 1 (answer-only) solved an average of 6.18 items ($SD = 1.46$), while participants in Condition 2 (full reasoning traces) solved an average of 5.46 items ($SD = 1.21$), and participants in Condition 3 (summary reasoning traces) solved an average of 6.11 items ($SD = 1.46$). Tukey-adjusted post-hoc comparisons showed that C2 participants performed significantly worse than C1 and C3, whereas C1 and C3 did not significantly differ. Thus, full reasoning traces impaired task accuracy relative to both the answer-only and summary conditions, while summary traces preserved performance at the level of no reasoning traces.
+
+\subsubsection{Objective task performance}\label{sec:achieved_performance}
+Achieved performance differed significantly across conditions, $F(2, 556) = 15.10$, $p < .001$, $\eta^2 = .052$. Participants in \textit{Answer-only} condition solved an average of 6.18 items ($SD = 1.46$), participants in \textit{Full-trace} condition solved an average of 5.46 items ($SD = 1.21$), and participants in the \textit{Summary-trace} condition solved an average of 6.11 items ($SD = 1.46$). Tukey-adjusted post-hoc comparisons showed that \textit{Full-trace} participants performed significantly worse than \textit{Answer-only} ($M_{\mathrm{diff}} = -0.72$, $p_{\mathrm{adj}} < .001$) and \textit{Summary-trace} ($M_{\mathrm{diff}} = 0.65$, $p_{\mathrm{adj}} < .001$). \textit{Answer-only} and \textit{Summary-trace} conditions did not significantly differ ($M_{\mathrm{diff}} = -0.07$, $p_{\mathrm{adj}} = .873$). Thus, full reasoning traces impaired task accuracy relative to both the answer-only and summary conditions, while summary traces preserved performance at the level of no reasoning traces. \daniela{fix}
+%Participants in Condition 1 (no reasoning traces) solved an average of 6.18 items ($SD$ = 1.46). In Condition 2 (full reasoning traces), participants solved significantly fewer items $M$ = 5.46 ($SD$ = 1.21) than C1 ($t(358.5) = 5.16, p < .001, d = .54$). Participants in Condition 3 (summary reasoning traces) solved a similar number of items to C1, 6.11 items, $SD$ = 1.46  ($t(374) = .47, p = 1.0, d = .05$), and significantly more than C2 ($t(361) = -4.65, p < .001, d = -.48$).
+
+As a benchmark comparison, we tested whether participants in each condition performed above the model-alone score $M$=5.00 (see section \ref{sec:stimuli_control}). Participants in all three conditions scored significantly above the performance of GPT alone: \textit{Answer-only} ($M = 6.18$, $SD = 1.46$), $t(186) = 11.11$, $p < .001$, $d = .81$; \textit{Full-trace} ($M = 5.46$, $SD = 1.21$), $t(182) = 5.20$, $p < .001$, $d = .38$; and \textit{Summary-trace} ($M = 6.11$, $SD = 1.46$), $t(188) = 10.44$, $p < .001$, $d = .76$. Figure~\ref{fig:performance_comparison} shows the distribution of achieved performance across the three conditions.  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{comparison_3modes.pdf}
+    \caption{Achieved performance (0-10) across trace formats (\textit{Answer-only} condition, N=187 (green curve); \textit{Full-trace} condition, N=189 (blue curve); \textit{Summary-trace} condition, N=183 (yellow curve). The performance of ChatGPT is represented by a dashed vertical line (both GPT-5 and gpt-oss-20b achieved a score of 5 on the set of 10 LSAT questions).}
+    \label{fig:performance_comparison}
+\end{figure}
+    
+
+\subsubsection{Overestimation bias}
+Perceived performance substantially exceeded actual performance in all conditions. In \textit{Answer-only} condition, participants estimated 7.92 items correct ($SD = 1.59$), while achieving 6.18 correct items, yielding a significant overestimation, $t(186) = 11.63$, $p < .001$, $d = .85$. In \textit{Full-trace} condition, participants estimated 7.91 items correct ($SD = 1.71$), while achieving 5.46 correct items, also showing significant overestimation, $t(182) = 16.35$, $p < .001$, $d = 1.21$. In \textit{Summary-trace} condition, participants estimated 8.07 items correct ($SD = 1.55$), while achieving 6.11 correct items, again showing significant overestimation, $t(188) = 13.28$, $p < .001$, $d = .97$.
+
+
+Perceived performance did not differ significantly across conditions, $F(2, 556) = 0.58$, $p = .561$, $\eta^2 = .002$. However, the magnitude of overestimation differed significantly by condition, $F(2, 556) = 5.83$, $p = .003$, $\eta^2 = .021$. Participants in \textit{Full-trace} condition showed the largest overestimation bias ($M = 2.44$, $SD = 2.02$), followed by \textit{Summary-trace} ($M = 1.96$, $SD = 2.03$) and \textit{Answer-only} ($M = 1.74$, $SD = 2.04$). Tukey-adjusted post-hoc comparisons showed that overestimation was significantly larger in \textit{Full-trace} condition than in \textit{Answer-only} ($M_{\mathrm{diff}} = 0.70$, $p_{\mathrm{adj}} = .003$). \textit{Summary-trace} did not differ significantly from \textit{Answer-only} ($M_{\mathrm{diff}} = 0.22$, $p_{\mathrm{adj}} = .546$) or \textit{Full-trace} ($M_{\mathrm{diff}} = -0.48$, $p_{\mathrm{adj}} = .056$).
+
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{violin_estimation_error.pdf}
+    \caption{Performance estimation bias (perceived-actual performance) across conditions. Positive values indicate overestimation.}
+    \label{fig:performance_comparison}
+\end{figure}
+
+Together, these results indicate that participants across all conditions overestimated their performance, but this miscalibration was most pronounced in the full reasoning trace condition. Notably, \textit{Full-trace} participants performed worst objectively while perceiving their performance as comparable to participants in the other conditions, resulting in the largest overestimation gap. Summary traces did not significantly worsen miscalibration relative to the answer-only baseline, although participants' self-beliefs remained inflated.
+
+
+\begin{table}[H]
+\centering
+\caption{ANOVAs with descriptives by condition. Values are means with standard deviations in parentheses.}
+
+\begin{tabular}{lcccccccc}
+\hline
+DV                    & \textit{Answer-only}             & \textit{Full-trace}                 & \textit{Summary-trace} & F & df1 & df2 & p & \multicolumn{1}{l}{$\eta^2$} \\ \hline
+Achieved  &    6.18 (1.46)      &      5.46 (1.21)     &       6.11 (1.46)           &       15.10           &              2        &      556                &      <.001***           &            .052         \\
+Perceived &    7.92 (1.59)      &      7.91 (1.71)     &      8.07 (1.55)          &       0.58       &             2           &        556              &        .561        &           .002       \\
+Overestimation &    1.74 (2.04)      &        2.44 (2.02)    &        1.96 (2.03)          &     5.83             &             2         &      556                &      .003**            &           .021           \\
+NASA-TLX     & 43.85 (13.09)  & 45.19 (14.39)  & 45.58 (13.51)  &  .828 & 2 & 556 & .438 & .003  \\
+TSQ                     & 3.61 (0.76)  & 3.80 (0.72)  & 3.83 (0.72)  & 4.99  & 2 & 556 & .007** & .018  \\
+UEQ-S                     & 0.81 (0.92)  & 1.19 (0.79)  & 1.12 (0.83)  & 10.92  & 2 & 556 & <.001*** & .038  \\
+SUS                     & 78.48 (15.34)  & 76.02 (19.32)  &  77.69 (17.15) & 0.962 & 2 & 556 & .383 & .003  \\ 
+
+\hline
+\end{tabular}
+
+%\raggedright \small  \textit{Note 1}. Achieved corresponds to achieved performance. Perceived corresponds to the perceived performance (self-estimation). Overestimation corresponds to the difference between perceived and achieved performance. 
+
+%\small  \textit{Note 2}. Reported are one-way between-subjects ANOVAs with condition (baseline, full trace, summary trace) as the factor. $\eta^2$ denotes effect size. Significance levels: *$p < .05$, **$p < .01$, ***$p < .001$.
+
+%\small \textit{Note 3}. NASA-TLX scale from 0-100
+
+%\small  \textit{Note 4}. SUS scale from 0-100
+
+%\small \textit{Note 5}. UEQ-S scale from -3 to 3 as stated in \ref{add ueq-s paper here}
+
+\raggedright \small \textit{Note}. Reported are descriptive statistics and one-way between-subjects ANOVAs with condition as the factor. The $p$ column refers to the omnibus ANOVA test, not pairwise comparisons. Pairwise condition differences were examined using Tukey-adjusted post-hoc comparisons and are reported in the text where relevant. Achieved performance, perceived performance, and overestimation are reported as number of items out of 10. Overestimation corresponds to perceived minus achieved performance. NASA-TLX and SUS are reported on 0--100 scales. TSQ is reported on a 1--5 scale. UEQ-S is reported on a $-3$ to $+3$ scale, where higher values indicate a more positive user experience. $\eta^2$ denotes effect size. Significance levels: *$p < .05$, **$p < .01$, ***$p < .001$. \daniela{ueq scale }
+\end{table}
+
+
+\subsection{Metacognitive Sensitivity}
+
+
+To examine whether participants' self-assessments were related to their actual performance, we computed within-condition correlations between perceived and achieved performance. In all three conditions, correlations were low and non-significant: \textit{Answer-only}, $r(185) \approx .10$, $p = .166$; \textit{Full-trace}, $r(181) \approx .07$, $p = .319$; \textit{Summary-trace}, $r(187) \approx .10$, $p = .173$. This indicates that participants' performance estimates were weakly related to their actual scores, regardless of trace format. In other words, we found no evidence that any condition helped participants form more accurate self-assessments after completing all the tasks, as the format of reasoning traces did not improve the alignment perceived and achieved performance. To test whether participants discriminated correct from incorrect responses within each condition, we ran paired-samples $t$-tests comparing $\overline{c_{+}}$ and
+$\overline{c_{-}}$. The effect was significant in every condition: baseline, $t(186) = 6.36$, $p < .001$, $d_z = 0.47$, $M_{\Delta} = 0.066$; full-AI, $t(182) = 4.98$, $p < .001$, $d_z = 0.37$, $M_{\Delta} = 0.047$; summary, $t(188) = 5.61$,
+$p < .001$, $d_z = 0.41$, $M_{\Delta} = 0.062$.
+
+
+To assess whether AI exposure changed how well participants' confidence ratings tracked their actual performance on the trial level, we computed four trial-level metacognitive indices from the ten LSAT items per participant. Correctness was coded $1/0$, and the 0--100 confidence slider was rescaled to $[0,1]$. Table~\ref{tab:meta-indices} reports the descriptives and ANOVA summaries for all four indices of metacognitive sensitivity (for an introduction see \citet{Rhanev}we employed (AUC, Brier Score, calibration and discrimination) \footnote{We do not report meta-d′ or M-ratio because reliable estimation, even under the HMeta-d hierarchical Bayesian estimator, requires substantially more trials per participant than our 10-item battery}. 
+As a first, intuitive sensitivity index we computed each participant's
+\emph{confidence gap}, $\Delta_{\text{disc}} = \overline{c_{+}} - \overline{c_{-}}$, defined as the difference between mean confidence on
+correct trials ($\overline{c_{+}}$) and mean confidence on incorrect trials ($\overline{c_{-}}$). Positive values indicate that confidence
+was higher when the response was right than when it was wrong; values near zero indicate insensitivity. To test whether participants
+discriminated correct from incorrect responses within each condition, we ran paired-samples $t$-tests comparing $\overline{c_{+}}$ and
+$\overline{c_{-}}$. The effect was significant in every condition: baseline, $t(186) = 6.36$, $p < .001$, $d_z = 0.47$, $M_{\Delta} = 0.066$; full-AI, $t(182) = 4.98$, $p < .001$, $d_z = 0.37$, $M_{\Delta} = 0.047$; summary, $t(188) = 5.61$,
+$p < .001$, $d_z = 0.41$, $M_{\Delta} = 0.062$. Across conditions, however, the size of the gap did not differ (baseline: $M = 0.066$, $SD = 0.141$; full: $M = 0.047$, $SD = 0.128$; summary: $M = 0.062$, $SD = 0.151$), $F(2, 556) = 0.89$, $p = .412$, $\eta^2 = .003$.
+
+As a second, distribution-free sensitivity index we computed the non-parametric Type-2 ROC area, defined as the probability that a randomly drawn correct trial received a higher confidence rating than a randomly drawn incorrect trial, with ties contributing $0.5$: $\mathrm{AUROC2} = \Pr(c_{+}>c_{-}) + \tfrac{1}{2}\Pr(c_{+}=c_{-})$. AUROC2 is bounded in $[0,1]$, equals $0.5$ at chance, and unlike
+$\Delta_{\text{disc}}$ depends only on the rank-order of confidence which makes it robust to wicked distributions. Mean AUROC2 was nearly identical across conditions
+(baseline: $M = 0.588$, $SD = 0.206$; full: $M = 0.561$, $SD = 0.191$;
+summary: $M = 0.587$, $SD = 0.202$) and conditions did not differ, $F(2, 556) = 1.03$, $p = .358$, $\eta^2 = .004$.
+
+Whereas the two indices above quantify \emph{sensitivity} (whether confidence \emph{discriminates} correct from incorrect trials), we
+next examined \emph{calibration} (whether confidence \emph{matches} accuracy in absolute terms). For each participant, we computed
+$\mathrm{calibration} = \overline{c} - \mathrm{accuracy}$, where $\overline{c}$ is mean confidence and $\mathrm{accuracy}$ is the proportion of items answered correctly. Positive values indicate
+ overconfidence, negative values underconfidence. Calibration differed between conditions, $F(2, 557) = 8.63$, $p < .001$, $\eta^2 = .030$.
+All conditions were overconfident on average, but the full-AI condition ($M = 0.265$, $SD = 0.183$) showed greater overconfidence
+than baseline ($M = 0.187$, $SD = 0.180$; Tukey HSD, $p < .001$); the summary condition ($M = 0.222$, $SD = 0.178$) fell between the
+two and did not differ reliably from either (vs.\ baseline, $p = .15$; vs.\ full, $p = .056$).
+
+As an integrated measure that combines calibration and resolution, we computed the Brier score, $\mathrm{BS} = \tfrac{1}{n}\sum_{i}(c_i -
+y_i)^2$, i.e.\ the mean squared error of confidence treated as a probabilistic forecast of correctness $y_i \in \{0,1\}$. It rewards
+forecasts that are both well-calibrated and discriminating, and lower values
+indicate forecasts that are simultaneously well-calibrated and informative; a participant who reports a confidence of 50 on every trial
+attains a Brier score of $0.25$. Conditions differed reliably, $F(2, 557) = 12.36$, $p < .001$, $\eta^2 = .043$. The full-AI condition produced the worst (highest) Brier scores ($M = 0.342$, $SD = 0.117$) and was reliably worse than both baseline ($M = 0.288$, $SD = 0.111$; Tukey HSD, $p < .001$) and summary ($M = 0.296$, $SD = 0.111$; $p < .001$); baseline and summary did not differ ($p = .78$).
+Together, these results indicate that participants' metacognitive sensitivity was relatively weakened in the full-trace condition.  
+
+
+
+\subsubsection{Collaborative AI Metacognition Scale (CAIMS)}
+We use CAIMS as a self-report index of users' disposition to engage metacognitively with AI. 
+Metacognitive engagement during AI-assisted reasoning was assessed using the Collaborative AI Metacognition Scale \cite{Sidra03042026}, which measures Planning, Monitoring, and Evaluation of one's thinking while working with AI (all items rated on a 1--5 scale; higher scores indicating a disposition for greater metacognitive engagement in AI Interaction). 
+
+Self-reported metacognitive collaboration on the CAIMS was high across the board and increased monotonically from baseline through full to summary on every
+subscale (Table~\ref{tab:caims-means}); the one-way ANOVA reached
+significance only for evaluation, $F(2, 557) = 3.06$, $p = .048$,
+$\eta^2 = .011$ (summary $>$ baseline, Tukey $p = .036$). The correlational picture, however, ran counter to what a genuine
+metacognitive-monitoring account would predict: pooling across all 560 participants (Table~\ref{tab:caims-overall}), every CAIMS scale
+predicted \emph{larger} signed overestimation bias and \emph{larger} absolute metacognitive error (all $r \approx .12$--$.18$,
+$p \leq .005$, Holm-significant). 
+
+Extending the analysis to the trial-level indices of metacognitive sensitivity reinforces the pattern: CAIMS
+positively predicted mean confidence (planning $r = .28$, monitoring $r = .27$, evaluation $r = .33$, total $r = .33$), trial-level calibration error (all $r \approx .27$--$.32$), and Brier scores (all $r \approx .25$--$.29$; all of these Holm-significant at
+$p < .001$), but showed no Holm-significant association with the two rank-based sensitivity indices (confidence gap and AUROC2, all
+$|r| \leq .10$). Self-reported metacognitive literacy therefore tracks the \emph{level} of inflated confidence and the calibration error it
+produces without tracking the \emph{informativeness} of confidence.
+
+Crucially, the effect is not specific to the trace conditions: in
+baseline planning still predicted absolute miscalibration, $r = .23$, $p = .002$,
+Holm $p = .020$, so the correlation cannot be reduced to the manipulation. The signed bias correlations were nevertheless
+strongest in the summary condition (planning $r = .20$, monitoring $r = .27$, evaluation $r = .25$, total $r = .28$; all $p \leq .006$),
+accompanied by a slight performance drop (evaluation $\rightarrow$ score $r = -.18$, $p = .014$), indicating that summary-condition participants who reported more metacognitive interaction literacy in terms of evaluation skewed specifically toward overestimation. This largely replicates \citet{FERNANDES2026108779}. 
+
+\begin{table}[H]
+\centering
+\caption{Overall (condition-agnostic) Pearson correlations between
+CAIMS subscales and the three outcome variables. Values are
+$r$ with 95\,\% CI; $N = 560$. Stars denote uncorrected $p$-values
+(* $<.05$, ** $<.01$, *** $<.001$); $\dagger$ marks effects that
+do not survive Holm correction across the 16 tests within each
+outcome.}
+\label{tab:caims-overall}
+\begin{tabular}{lccc}
+\hline Subscale     & Score                                & Calibration bias ($\Delta$)             & Absolute accuracy ($|\Delta|$)        \\ \hline
+Planning             & $-.06$ $[-0.14,\,0.03]$              & $.16^{***}$ $[0.08,\,0.24]$            & $.16^{***}$ $[0.08,\,0.24]$           \\
+Monitoring           & $-.07^{\dagger}$ $[-0.16,\,0.01]$    & $.16^{***}$ $[0.07,\,0.24]$            & $.15^{***}$ $[0.06,\,0.23]$           \\
+Evaluation           & $-.09^{*\dagger}$ $[-0.17,\,-0.00]$  & $.16^{***}$ $[0.07,\,0.24]$            & $.12^{**\dagger}$ $[0.04,\,0.20]$     \\
+Total                & $-.09^{*\dagger}$ $[-0.17,\,-0.00]$  & $.18^{***}$ $[0.10,\,0.26]$            & $.16^{***}$ $[0.08,\,0.24]$           \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{CAIMS subscale and total descriptives by condition. Values
+are means with standard deviations in parentheses on the 1--5 metric;
+$F$, $p$, and $\eta^2$ are from one-way ANOVAs comparing the three
+conditions.}
+\label{tab:caims-means}
+\begin{tabular}{lccccrrrr}
+\hline Subscale     & Overall M(SD) & Baseline M(SD) & Full M(SD)   & Summary M(SD) & $F$  & df1 & df2 & $p$ \\ \hline
+Planning             & 4.01 (0.71)   & 3.95 (0.72)    & 4.00 (0.67)  & 4.09 (0.72)   & 2.06 & 2   & 557 & .128   \\
+Monitoring           & 4.04 (0.66)   & 3.97 (0.71)    & 4.04 (0.65)  & 4.10 (0.61)   & 1.87 & 2   & 557 & .155   \\
+Evaluation           & 4.22 (0.64)   & 4.14 (0.66)    & 4.22 (0.63)  & 4.30 (0.63)   & 3.06 & 2   & 557 & .048*  \\
+Total                & 4.08 (0.59)   & 4.01 (0.60)    & 4.08 (0.58)  & 4.15 (0.57)   & 2.90 & 2   & 557 & .056\textsuperscript{$\dagger$} \\
+\hline
+\end{tabular}
+\end{table}
+
+%CAIMS scores were uniformly high across all conditions (Overall: $C1:M=4.01,SD=0.60;C2:M=4.08,SD=0.58;C3:M=4.15,SD=0.57$). %One-way ANOVAs revealed no significant differences across conditions for Planning, Monitoring or Overall metacognition.% A significant effect emerged for Evaluation, $F(2,556)=3.02, p = .049, \eta^2 = .011$. Tukey-adjusted post-hoc comparisons showed that participants in the Summary condition reported slightly higher evaluative metacognition than those in the Baseline condition ($M_{\mathrm{diff}} = 0.16, p_{\mathrm{adj}} = .038$). No other pairwise comparisons reached significance. 
+% Effect sizes were negligible across all subfactors ($\eta^2 \leq .011$), and the uniformly high scores suggest a potential ceiling effect, which may have limited sensitivity to condition-induced differences.
+
+% \begin{table}[H]
+% \centering
+% \caption{CAIMS descriptives and ANOVAs by condition. Values are means with standard deviations in parentheses.}
+% \begin{tabular}{lcccccccc}
+% \hline
+% Scale & C1 M(SD) & C2 M(SD) & C3 M(SD) & F & df1 & df2 & p & $\eta^2$ \\ \hline
+% Planning   & 3.95 (0.72) & 4.00 (0.67) & 4.09 (0.72) & 1.94 & 2 & 556 & .145 & .007 \\
+% Monitoring & 3.97 (0.71) & 4.04 (0.65) & 4.10 (0.61) & 1.65 & 2 & 556 & .193 & .006 \\
+% Evaluation & 4.14 (0.66) & 4.22 (0.63) & 4.30 (0.63) & 3.02 & 2 & 556 & .049* & .011 \\
+% Overall    & 4.01 (0.60) & 4.08 (0.58) & 4.15 (0.57) & 2.71 & 2 & 556 & .067 & .010 \\
+% \hline
+% \end{tabular}
+
+% \raggedright \small \textit{Note.} Scores are reported on a 1--5 scale (1 = \textit{Never}, 5 = \textit{Always}). Reported are one-way between-subjects ANOVAs with condition as the factor. 
+% $\eta^2$ denotes effect size. Significance levels: *$p < .05$, **$p < .01$, ***$p < .001$.
+% \label{tab:caims}
+% \end{table}
+
+
+
+\subsection{Task Load}
+
+We next examined perceived workload using the NASA-TLX. Overall workload did not differ significantly across conditions, $F(2, 556) = 0.83$, $p = .438$, $\eta^2 = .003$. Descriptive statistics for the overall NASA-TLX score and its six subscales are shown in Table~\ref{tab:nasa}.
+
+\begin{table}[H]
+\centering
+\caption{Nasa Task Load Questionnaire}
+\begin{tabular}{lccc}
+\hline
+\multicolumn{1}{c}{Condition} & \textit{Answer-only} M(SD)    & \textit{Full-trace} M(SD)      & \textit{Summary-trace}   M(SD)    \\ \hline
+Nasa TLX                      & 43.85 (13.09) & 45.19 (14.39) & 45.58 (13.51) \\
+Mental Demand                 & 71.42 (22.72) & 73.66 (22.89) & 74.71 (21.15) \\
+Physical Demand               & 26.95 (25.89) & 33.58 (28.22) & 39.37 (31.62) \\
+Temporal Demand               & 26.47 (19.82) & 31.37 (22.09) & 27.83 (19.40) \\
+Mean Performance              & 32.75 (24.62) & 33.44 (27.80) & 31.35 (27.03) \\
+Mean Effort                   & 67.35 (23.12) & 69.40 (24.88) & 71.46 (21.99)  \\
+Mean Frustration              & 38.16 (29.62) & 29.70 (25.96) & 28.78 (25.03)   \\
+\hline
+\end{tabular}
+\label{tab:nasa}
+
+\raggedright \small \textit{Note.} Means and standard deviations are reported on a 0-100 scale. The overall NASA-TLX score was computed as the mean of the six subscales. Overall workload did not differ significantly across conditions.
+\end{table}
+
+
+
+
+\subsection{Trust in AI }
+Trust in the AI differed significantly across conditions $(F(2,556) = 5.00, p = .007,\eta^2 = .018)$. In all three conditions, trust ratings were significantly above the scale midpoint ($\mu = 3$): \textit{Answer-only} (M = 3.61, SD = 0.76; t(186) = 10.91, p < .001, d = 0.80), \textit{Full-trace} ($M = 3.80, SD = 0.72; t(182) = 15.15, p < .001, d = 1.12$), and \textit{Summary-trace} ($M = 3.83, SD = 0.72; t(188) = 15.76, p < .001, d = 1.15$). Tukey-adjusted post-hoc comparisons revealed that participants in the baseline condition reported significantly lower trust than those in both the full-trace condition ($p_{adj} = .030$) and the summary condition ($p_{adj} = .011$). No significant difference was found between the full-trace and summary conditions ($p_{adj} = .941$). 
+
+
+\subsubsection{Follow-up ratings}
+After each problem, participants rated their confidence in their own answer on a 0--100 slider. This trial-level confidence measure differs from the global performance estimate reported after task completion (used to compute overestimation above, see section \ref{sec:achieved_performance}) and in Conditions \textit{Full-trace} and \textit{Summary-trace}, they additionally rated the perceived usefulness of the reasoning traces, whether the reasoning matched the model's final answer, and their confidence in the model's answer. Confidence in one's own answer did not differ significantly across conditions ($F(2,556) = 2.05, p = .129, \eta^2 = .007$). Among conditions exposed to reasoning traces, participants did not differ significantly in perceived usefulness of the reasoning ($F(1,370) = 3.05, p = .081, \eta^2 = .008$) or confidence in the model's answer ($F(1,370) = 0.63, p = .428, \eta^2= .002$). However, participants in the full-trace condition rated the reasoning as matching the model's final answer more closely than those in the summary condition $(F(1,370) = 4.72, p = .030, \eta^2= .013$; \textit{Full-trace}: $M = 80.64, SD = 14.48; \textit{Summary-trace}: M = 76.87, SD = 18.64)$. This suggests that while full traces were perceived as more internally coherent, this did not translate into higher usefulness ratings or greater confidence in the model.
+
+
+\begin{table}[H]
+\centering
+\caption{ANOVAs with descriptives by condition for follow-up questions after each task. Values are means with standard deviations in parentheses.}
+\begin{tabular}{lccccllll}
+\hline DV                        & Baseline M(SD) & Full M(SD)      & Summary M(SD)   & F    & df1 & df2 & $p$     & $\eta^2$ \\ \hline
+Confidence (own answer)   & 80.68 (12.39)  & 81.13 (15.03)  & 83.29 (12.42)  & 2.05 & 2  & 556 & .129  & .007     \\
+Usefulness of reasoning   & --  & 78.56 (15.95)   & 75.13 (18.73)   & 3.05 & 1   & 370  & .081     &  .008  \\
+Reasoning matched answer  & --  & 80.64 (14.48)  & 76.87 (18.64)  & 4.72 & 1   & 370  & .03*   & .013   \\
+Confidence in model answer    & --   & 77.89 (16.23)   & 76.53 (16.88)   & .629 & 1   & 370  &  .428 & .002      \\
+\hline
+\end{tabular}
+
+\raggedright \small  \textit{Note}: Reported are one-way ANOVAs with condition as the factor. For Confidence (in own answer), all three conditions (baseline, full reasoning, summary reasoning) were included. For the other follow-ups, only full vs.~summary conditions were compared (baseline did not include these questions). Means are on a 0--100 scale. $\eta^2$ denotes effect size. Significance levels: *$p < .05$, **$p < .01$, ***$p < .001$.
+\end{table}
+
+\subsection{System Usability}
+
+\subsubsection{System Usability Scale} System usability was measured using the SUS-S questionnaire \cite{}, did not differ significantly across conditions, $F(2, 556) = 0.96$, $p = .383$, $\eta^2 = .003$. Mean SUS scores were high across all conditions: \textit{Answer-only} ($M = 78.48$, $SD = 15.34$), \textit{Full-trace} ($M = 76.02$, $SD = 19.32$), and \textit{Summary-trace} ($M = 77.69$, $SD = 17.15$). Tukey-adjusted post-hoc comparisons showed no significant pairwise differences between conditions, all $p_{\mathrm{adj}} \geq .363$.
+
+\subsubsection{User Experience}
+We next examined participants' subjective user experience using the UEQ-S \cite{}. The UEQ-S provides separate scores for Pragmatic Quality, reflecting task-oriented qualities such as clarity, efficiency, and ease of use, and Hedonic Quality, reflecting qualities such as interest, excitement, and novelty. Scores range from $-3$ to $+3$, with higher values indicating a more positive user experience. Descriptive statistics are reported in Table~\ref{tab:ueqs}.
+
+\begin{table}[H]
+\centering
+\caption{(UEQ-S) Pragmatic, Hedonic and Overall scales per condition for the UEQ-s questionnaire, M(SD)}
+\begin{tabular}{lcccccccc}
+\hline
+                  & \textit{Answer-only}    & \textit{Full-trace}   & \textit{Summary-trace}   & F & df1 & df2 & $p$     & $\eta^2$ \\ \hline
+Pragmatic Quality & 0.89 (0.66) & 1.07 (0.60) & 0.94 (0.71) & 4.01 & 2& 556 & .019* & .014 \\
+Hedonic Quality   & 0.73 (1.39) & 1.32 (1.16) & 1.31 (1.21) & 13.31 & 2& 556& <.001*** & .046 \\
+UEQ-S Overall     & 0.81 (0.92) & 1.19 (0.79) & 1.12 (0.83)& 10.92 &2&556&<.001*** & .038 \\  
+\hline
+\end{tabular}
+
+\raggedright \small \textit{Note}: Reported are one-way ANOVAs with condition as the factor. All three conditions (baseline, full reasoning, summary reasoning) were included. Means and Standard Deviations are reported on the UEQ-S scale, ranging from $-3$ to $+3$, where higher values indicate a more positive user experience. $\eta^2$ denotes effect size.  Significance levels: *$p < .05$, **$p < .01$, ***$p < .001$.
+\label{tab:ueqs}
+\end{table}
+
+Condition had a significant effect on all three UEQ-S measures. For Pragmatic Quality, Tukey-adjusted post-hoc comparisons showed that \textit{Full-trace} was rated significantly higher than \textit{Answer-only} ($p_{adj} = .017$), whereas \textit{Summary-trace} did not differ significantly from either \textit{Answer-only} ($p_{adj} = .728$) or \textit{Full-trace} ($p_{adj} = .114$). For Hedonic Quality, both \textit{Full-trace} and \textit{Summary-trace} were rated significantly higher than \textit{Answer-only} (both $p_{adj} < .001$), with no significant difference between \textit{Full-trace} and \textit{Summary-trace} ($p_{adj} = .999$). The same pattern was observed for UEQ-S Overall: both \textit{Full-trace} ($p_{adj} < .001$) and \textit{Summary-trace} ($p_{adj} = .001$) were rated significantly higher than \textit{Answer-only}, while \textit{Full-trace} and \textit{Summary-trace} did not differ significantly ($p_{adj} = .703$).
+Thus, reasoning traces improved subjective user experience relative to the answer-only baseline, particularly for hedonic quality. However, full and summary traces were experienced similarly overall, suggesting that the more verbose full traces did not provide an additional subjective experience benefit over summarized traces.
+
+\subsection{Mechanism: Does the trace-induced trust gain explain miscalibration?}
+\label{sec:mediation}
+The metacognitive sensitivity analyses above show that trace exposure, and especially exposure to full reasoning traces, inflates participants' confidence in their own performance, but they leave the mechanism underspecified.
+One possibility is that the trace-rich interaction shifts participants' subjective appraisal of the AI (perceived trustworthiness, perceived engagement) and that they then borrow this appraisal as evidence for their joint competence. Because we collected both TSQ trust ratings and UEQ hedonic appeal in the same session, this account is testable within the present sample.
+To probe the mechanism behind the condition effect, we fit a parallel multiple-mediator model in \texttt{lavaan} with condition as a three-level dummy-coded predictor (baseline reference), trust (TSQoverall) and UEQ hedonic as parallel mediators, and overestimation bias ($\Delta = \mathrm{Estimate} - \mathrm{Score}$) as the outcome; all variables were $z$-standardised and indirect effects
+were tested with $5{,}000$ percentile bootstrap samples ($N = 560$).
+Both trace conditions raised trust ($a_{1,\text{full}} = 0.27$, $p = .010$; $a_{1,\text{summary}} = 0.30$, $p = .004$) and hedonic appeal ($a_{2,\text{full}} = 0.46$; $a_{2,\text{summary}} = 0.45$; both $p < .001$), but only hedonic appeal predicted overestimation once trust was partialled out ($b_{2} = 0.15$, $p = .010$;
+$b_{1} = 0.09$, $p = .12$), so the indirect path through hedonic was significant for both conditions (full: $\hat{\beta} = 0.066$, 95\,\% CI $[0.016, 0.131]$; summary: $0.066$, $[0.016, 0.130]$)
+whereas the trust path was not. Single-mediator sensitivity models showed that trust \emph{does} carry an indirect effect on its own (full: $0.048$, $[0.008, 0.100]$), but this effect is absorbed by
+hedonic when both are entered jointly, it seems trust and hedonic UEQ correlate $r = .65$, and UEQ hedonic appears to capture the relevant subjective appraisal more comprehensively. The full condition retained a direct
+effect ($c'_{f} = 0.26$, $p = .013$; partial mediation), while the summary condition was fully mediated ($c'_{s} = 0.02$, $p = .82$).
+
+The AI interaction inflates participants' subjective appraisal of the exchange, which is then borrowed as evidence for their own performance, though the active ingredient looks more like a fluency/affect signal (hedonic appeal) than calibrated trust, in line with processing-fluency accounts of metacognitive misattribution \cite{}.
+
+
+
+\subsection{Qualitative Analysis}
+
+
+%In this section, we present the results of the qualitative analysis. We analyzed the qualitative data collected during the study using an inductive thematic approach \cite{clarke2017thematic}. This included the responses to an open-ended question at the end of the questionnaire and their comments on the model reasoning and answer. The analysis provided insight into how participants interacted with the AI chatbot and their perceptions of it, where recurrent themes were found (see \autoref{sec:qualitative_C2} and \autoref{tab:qualitative_C3}).
+
+To understand how participants engaged with reasoning traces (\textit{Full-trace} and \textit{Summary-trace} conditions), we conducted an inductive thematic analysis \cite{clarke2017thematic} of participants' open-ended responses to ``\textit{Please describe how you used the AI Chatbot}'' and ``\textit{Please share any comments about the reasoning or the answer}''. Across both conditions, four recurring interaction patterns emerged: cognitive offloading, guided reasoning, calibrated comparison, and trace burden. We report the frequency of each pattern and use representative quotes to interpret the quantitative findings. 
+
+
+
+\subsubsection{Full-trace condition}
+
+%In Condition 2, participants were exposed to full reasoning traces and could reveal the model’s final answer. To examine how participants used the model in this condition, we conducted a qualitative analysis of their responses to the open-ended question "A qualitative analysis of the open-ended question "Please describe how you used the AI Chatbot", revealing different perceptions of the AI and highlighting distinct modes of interaction.
+In the \textit{Full-trace} condition, participants saw the model's reasoning trace before they could reveal its final answer. Participants' descriptions referred almost exclusively to the reasoning content, and the reveal-answer button itself was rarely mentioned. We therefore interpret the patterns as responses to the traces. 
+
+%Participants were grouped into six categories. Participants' descriptions primarily referred to the model’s reasoning and explanations, where the reveal-answer button itself was not salient. Therefore, the qualitative findings are interpreted mainly as responses to the presence of full reasoning traces. 
+
+Four main patterns emerged (Table~\ref{tab:qualitative_C2}). The largest group (Group 1, $35.3\%$) used the model as a primary source of answers, asking it for answers or following its suggestions with limited independent evaluation. For example, participant C2-P122 wrote that the chatbot was ``\textit{spot on}'' and that they ``\textit{just followed exactly what it suggested}''. Similarly, C2-P130 described pasting the question and answer options and having the model ``\textit{choose the best answer}''. This pattern suggests that full traces led to delegation rather than support evaluation and functioning as a transparency mechanism. Instead, the reasoning seemed to act like the placebic explanations described by \citet{eiband2019impact}, where the presence of fluent justifications increased trust independently of whether participants engaged with its content. This interpretation is consistent with participants' trust ratings in the \textit{Full-trace} condition despite its lower task accuracy.
+
+%The largest group of participants used the AI as a primary answer source or engaged in cognitive offloading, asking the model for answers or following its suggested response with limited evidence of independent evaluation (Group 1: $65/183, 35.3\%$). These participants described asking the model for answers, following the generated response, or using the model output as the basis for their own answer. For example, C2-P122 wrote that the chatbot was ``\textit{spot on}'' and that they ``\textit{just followed exactly what it suggested}.'' Similarly, C2-P130 described pasting in the question and answer options and having the model ``\textit{choose the best answer}.'' This pattern suggests that full reasoning traces may increase the perceived understanding of the model. However, this trust was not always calibrated. In some cases, the reasoning trace appeared to support cognitive offloading rather than independent evaluation.
+
+A second large group (Group 2, $57/183, 31.1\%$) used the trace as a guided reasoning aid, asking follow-up questions, using the model to break down problems, or relying on the trace to choose among options. Participant C2-P22 wrote that the model ``\textit{guided me step by step},'' and ``\textit{increased my confidence in selecting the right answer}.''
+This pattern is the qualitative counterpart to the illusion of understanding documented by \citet{fisher2021harder}, where fluent, well-organized reasoning traces gave participants a sense that they had grasped the problem, even when their task performance did not improve. The same mechanism may explain the largest overestimation observed in the \textit{Full-trace} condition, where participants felt they had reasoned through the problem, when in practice, they simply trusted the model reasoning \cite{johnson_source_1993}.
+
+%C2-P70 similarly reported asking follow-up questions ``\textit{to understand its reasoning}.''  
+%This pattern suggests that full reasoning traces can make the model more inspectable and useful for reasoning support, which may lead to a higher confidence in the model's answer, therefore leading to a higher overestimation (C2 was the condition with the highest overestimation level).
+
+
+A third smaller group ($38/183, 20.8\%$) used the model for calibrated comparison. Participants first formed their own answer, then used the model's reasoning to confirm or challenge it. C2-P34 reported that while the AI was reasoning, they ``reasoned through the problem myself,'' and then checked the model’s logic against their own. %Similarly, C2-P41 described trying to solve the questions independently and using the chatbot to ``\textit{double check.}'' This pattern suggests that full reasoning traces can support calibrated trust.
+This pattern constitutes genuine human–AI synergy \cite{} in which the user retains the cognitive work and uses the trace as a point of comparison rather than a replacement for their own reasoning.
+
+
+Finally, a notable subset (Group 4, $19/183, 10.4\%$) experienced the trace as a burden, being too long, confusing, or something they actively shortened. C2-P53 wrote that the responses were ``\textit{so incredibly long}'' that reading them thoroughly would take too much time. Participant C2-P138 reported asking the model to `\textit{dumb it down}'' and ``\textit{summarize it to be shorter}'' when the reasoning was confusing. These comments highlight the problem in XAI literature that the same verbosity that promises transparency can become an obstacle, with several participants reproducing the \textit{Summary-trace} condition on their own initiative.
+
+%A notable subset of participants experienced the full reasoning traces as burdensome or difficult to manage (Group 4: $19/183, 10.4\%$). Participants in this group described explanations as too long, confusing, overwhelming, or something they skimmed or asked the model to shorten. C2-P53 wrote that the responses were ``\textit{so incredibly long}'' that reading them thoroughly would take too much time, while C2-P138 reported asking the model to ``\textit{dumb it down}'' and ``\textit{summarize it to be shorter}'' when the reasoning was confusing. Similarly, C2-P25 reported asking the chatbot to answer with ``\textit{short reasoning responses as to not get overwhelmed with too much information}''. C2-P71 described skimming the reasoning when the model’s answer matched theirs and reading more carefully when it differed. These comments indicate a transparency–burden tradeoff: full reasoning traces gave participants more information to review, but it also increased reading and time spent on task. \daniela{link with too fluent explanations}
+
+%Overall, the C2 qualitative data suggest that full reasoning traces had mixed effects. They made the model more transparent and useful for some participants, supporting guided reasoning and calibrated comparison. At the same time, they also encouraged answer delegation for a larger subset of participants and created cognitive-load and usability costs for others. 
+
+
+
+\begin{table}[!htp]
+\centering
+\label{tab:qualitative_C2}
+\begin{tabular}{cll}
+\hline
+Group & \multicolumn{1}{c}{Label}                                            & Number of participants (\%)        \\ \cline{1-3}
+1     & Used AI to obtain answer and cognitive offloading  & 65 (35.3\%)     \\
+2     & AI as guided reasoning aid and decision support    & 57 (31.1\%)   \\
+3     & Independent verification and calibrated comparison & 38 (20.8\%)   \\
+4     & Reasoning trace burden                           & 19 (10.4\%)     \\
+5     & Unclear or inconclusive                           & 3 (1.6\%)     \\
+6     & AI not useful                                    & 1 (0.5\%)    \\
+\hline
+\end{tabular}
+\caption{theme groups based on the type of interaction with AI \textit{Full-trace} condition}
+\label{tab:qualitative_C2}
+\end{table}
+
+
+
+\subsubsection{Summary-trace condition} 
+
+In the \textit{Summary-trace} condition, participants saw a short summary of the model's reasoning together with its final answer. Three patterns accounted for 95\% of responses (Table~\ref{tab:qualitative_C3}).
+%In Condition 3, participants saw a short summary of the model's reasoning followed by the model's final answer. We analyzed the responses for all C3 participants ($N=189$). Participants were assigned to four theme groups: summary-based reasoning aid or decision support (Group 1), independent verification or calibrated comparison (Group 2), primary answer source or low engagement (Group 3), and unclear or inconclusive use (Group 4). 
+
+The largest group (39.2\%) used the traces as a reasoning and decision-support aid. These participants described reading the summarized reasoning, using it to evaluate options, or asking follow-up questions. C3-P64 wrote that the chatbot ``\textit{helped break down each question}'' and clarified relationships between statements and assumptions. The summary appeared to provide enough rationale to support reasoning without imposing the costs of a full trace, consistent with the \textit{Full-trace} burden pattern.
+
+%The largest group used the AI as a summary-based reasoning and decision-support tool ($74/189, 39.2\%$). These participants described reading the model's summarized reasoning, using it to evaluate answer options, asking follow-up questions, or using the explanation to reach a conclusion. For example, C3-P2 reported they used the model ``\textit{mostly for its reasoning}'' and that the reasoning was more important than the final answer. C3-P23 similarly reported reading the model's reasoning, evaluating its suggested answer, and then selecting the best choice. Other participants described the summary as helping them work through difficult reasoning problems: C3-P64 wrote that the chatbot ``\textit{helped break down each question}'' and clarified relationships between statements and assumptions. These responses suggest that the summary trace often provided enough rationale for participants to use the model as a reasoning aid without requiring them to process a full trace.
+
+A second group (28.6\%) used the summary for calibrated comparison. These participants formed their own answer first, then compared it to the model's. C3-P58 provides a particularly clear example: ``\textit{(...)When I disagreed with the model, I checked its reasoning against my own. If I was not persuaded then I would stick with my answer}''. The proportion of calibrated comparison users was similar across the \textit{Full-trace} and \textit{Summary-trace} conditions (20.8\% vs. 28.6\%), suggesting that whether participants adopt this stance reflects the user as much as the interface.
+
+%A second group used the AI for independent verification or calibrated comparison ($54/189, 28.6\%$). These participants first formed their own answer, intuition, or reasoning, and then compared it with the model's summary and final answer. C3-P1 wrote that they chose their own answer while the model responded and, when the answers did not match, read the reasoning to determine which was right. C3-P53 similarly described first forming their own reasoning and then comparing the model's reasoning with theirs before reaching a final conclusion. C3-P58 provides a particularly clear example of calibrated use: `` \textit{(...) When I disagreed with the model, I checked its reasoning against my own. If I was not persuaded then I would stick with my answer.}'' 
+%This pattern suggests that the summary of reasoning traces supported participants' metacognitive accuracy, as they were not simply accepting the model's answer but rather using the summary as a compact comparison point for their own reasoning.
+
+A third group (27.5\%) used the model as a primary answer source, copying questions in and selecting the answer based on the model's output. C3-P127 stated, ``\textit{On most answers I solely relied on the AI Chatbot. I copy/pasted the question and answers and allowed it to give me the answer},'' Notably, this offloading rate was lower in the \textit{Summary-trace} condition than in \textit{Full-trace} (27.5\% vs. 35.3\%). Although both rates are substantial, the difference may suggest that a full traces may lead participants a delegate more strongly than a summary, perhaps due to its apparent thoroughness \cite{10.1145/3397481.3450639, eiband2019impact}, whereas a summary's brevity encourages users to keep reasoning alongside the model.
+
+
+%A third group used the model as a primary answer source or showed low-interaction use ($52/189, 27.5\%$). These participants primarily described copying and pasting questions, asking the model for answers, reading what the model produced, or selecting the answer based on the model's output. For example, C3-P47 wrote, ``\textit{I asked the AI chatbot for answers, and used what it told me to choose my answer}.'' C3-P127 stated, ``\textit{On most answers I solely relied on the AI Chatbot. I copy/pasted the question and answers and allowed it to give me the answer},'' and C3-P157 explained that they answered the question based on the answer the chat gave them. 
+%This type of interaction highlights that concise explanations may reduce cognitive load and improve usability, but they may also make it easy for some participants to accept the model's response without much independent evaluation. \daniela{write better}
+
+A small final group provided unclear or inconclusive descriptions of use (Group 5: $9/189, 4.7\%$). These responses often expressed general impressions. %such as C3-P38 writing ``Very useful'' or C3-P154 writing ``it was very fast and helpful,'' without explaining how the reasoning summary was used. 
+
+Overall, the \textit{Summary-trace} qualitative data suggest that many participants used the short reasoning summary to evaluate options or guide their decision, and a substantial subset used it for calibrated comparison against their own reasoning. This pattern supports the idea that summaries may preserve some benefits of reasoning transparency while reducing the usability costs associated with full reasoning traces. At the same time, the low-interaction group shows that summaries do not eliminate cognitive offloading, as some participants still used the model primarily as a quick answer source. %Thus, C3 appears to support both evaluation and potential reliance, depending on how actively participants engaged with the summary.
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{cll}
+\hline
+Group & \multicolumn{1}{c}{Label}                            & \multicolumn{1}{c}{Number of participants (\%)} \\ \hline
+1     & AI as summary-based reasoning aid and decision support & 74 (39.2\%)                                     \\
+2     & Independent verification and calibrated comparison     & 54 (28.6\%)                                     \\
+3     & AI as primary answer source and low interaction use    & 52 (27.5\%)                                     \\
+4     & Unclear or inconclusive use              & 9 (4.7\%)  \\           
+\hline
+\end{tabular}
+\caption{theme groups based on the type of interaction with AI \textit{Summary-trace}}
+\label{tab:qualitative_C3}
+\end{table}
+
+
+%\daniela{rewrite previous, from old paper}
+%Qualitative data revealed different perceptions of AI’s role.
+%Differences did not descriptively show an effect on performance or metacognitive accuracy, see \autoref{tab:qualtable}, contradicting theories that suggest interaction framing impacts outcomes \cite{pataranutaporn_influencing_2023, villa2023placebo}. Regardless of user perception, the core metacognitive challenges in HAI persist. These findings suggest that while AI assistance can improve task performance, it does not proportionally enhance individuals’ metacognitive abilities, highlighting a disconnect between cognitive performance gains and self-evaluative insight. 
+
+
+\subsection{Summary of Findings}
+
+\section{Discussion}
+
+Our study examined how different formats of reasoning traces affect task performance, metacognitive accuracy, cognitive load, trust, and user experience in AI-assisted reasoning tasks. Across all five preregistered research questions (H1--H5), the results point to a consistent pattern of exposing users to more reasoning output did not improve their performance. Contrary to H4, participants who were exposed to full traces (\textit{Full-trace}) performed significantly worse and overestimated their performance to a greater degree than those who had no trace at all (\textit{Answer-only}). Summary of traces (\textit{Summary-trace}) preserved task performance at the no-trace baseline and led to lower overestimation levels, yet failed to support participants' metacognitive accuracy in any condition, providing no support for H1.
+
+The five preregistered predictions, therefore, divide into a single confirmation and four divergences, and the pattern of divergences is itself informative. H3, which predicted higher trust and confidence under trace exposure, was the only hypothesis the data partially supported: both trace conditions raised TSQ trust and UEQ hedonic appeal relative to the Answer-only baseline, with no reliable separation between Full-trace and Summary-trace. The remaining four predictions did not hold, and the reasons differ in theoretically meaningful ways. H4 was reversed for Full-trace, where performance fell below the no-trace baseline rather than improving above it and the qualitative patterns indicate that this reversal is mediated by offloading and guided reasoning rather than by genuine critical thinking using the model traces, so the explanation acted as a substitute for, not a support of, user reasoning. H1 was not supported in a related but distinct way: not because Summary outperformed Full-trace as predicted, but because no condition produced well-calibrated self-evaluation. The trace exposure inflated bias and left sensitivity unchanged, indicating that reasoning content does not feed the monitoring loop, which aligns with the notion that explanations are rarely used in HAI decision-making \cite{}. H2 and H5 produced null effects on cognitive load and usability. The most plausible reading is that participants did not, on average, deeply process the trace;, offloading and skimming patterns lower the effort actually expended, and a trace that is read superficially leaves NASA-TLX and SUS untouched while still inflating subjective appraisal of the exchange. The pattern of results thus shows that trace exposure reliably moves the  surface of the interaction (trust, hedonic appeal) but does not move effort, usability, performance, or calibration in the predicted directions, because users engage with the trace as a fluent artifact rather than as an object of evaluation, e.g., where they would compare their own and the model reasoning.
+
+Reasoning traces are often treated as transparency mechanisms and are assumed to help users understand why the model produced an answer, therefore supporting better judgment \cite{}. Our findings complicate this assumption. Full traces made the model's answer appear more inspectable and internally coherent, yet this additional information did not translate into better cognitive performance or calibration in the LSAT questions . Instead, it may have created an illusion of understanding \cite{fisher2021harder} due to the verbose and apparent fluency of the model, leading participants to trust the model's answer, which is consistent with the trust pattern predicted under H3.
+
+These findings suggest that providing users with more information about how an LLM  arrived at its answer does not necessarily support better reasoning, and may in some cases undermine it. Taken together, they reposition reasoning traces with respect to three connected positions in HAI: complementarity, overreliance, and metacognitive support.
+
+The complementarity premise holds that human and machine contribute distinct competencies whose joint output exceeds either alone \cite{vaccaro2024combinations}. Recent evidence already qualifies this premise toward augmentation rather than synergy \cite{vaccaro2024combinations,FERNANDES2026108779}, and our results extend the qualification to trace-mediated collaboration: contrary to H4, Full-trace performance sat at the model-alone benchmark, indicating that trace exposure shifted the joint outcome toward the model's level rather than beyond it. The qualitative patterns supply the process-level account. Only a minority of participants used the trace for calibrated comparison, the discourse which complementarity presupposes \cite{FERNANDES2026108779}.
+
+This reallocation also reframes overreliance. The cost-of-engagement account predicts that long, effortful explanations should reduce inappropriate reliance \cite{vasconcelos2023explanations}, yet the Full-trace condition, which operationalizes that high-cost variant, produced the largest overestimation bias and the highest hedonic ratings, against the calibration improvement preregistered in H1 and in line with the trust elevation preregistered in H3. Our mediation analysis isolated the mechanism, both trace conditions raised trust and hedonic appeal, but only hedonic appeal carried the indirect path to overestimation once trust was partialled out. The pattern is inconsistent with a cost--benefit account of reliance and consistent with a misattribution account in which fluent external information is assimilated to perceived self-understanding \cite{}. Overreliance under reasoning traces is therefore better characterized not as under-verification but as the misattribution of trace coherence to the user's own comprehension, with processing fluency rather than diagnostic faithfulness as the active ingredient \cite{}; substantive traces can operate placebically whenever coherence outruns diagnosticity, which in line with \citet{eiband2019impact}.
+
+The same mechanism explains why traces fail to support metacognition. Articulate model reasoning has been treated as a candidate scaffold for users' planning, monitoring, and evaluation \cite{FERNANDES2026108779}, but contrary to H1, calibration bias was largest under full traces and sensitivity indices did not differ across conditions: additional reasoning output did not increase the diagnosticity of users' confidence judgments and instead inflated overall self-evaluation. The corresponding null effects on cognitive load (against H2) and on usability ratings (against H5) further indicate that the costs of full traces are not registered by users at the level of effort or usability and instead surface only at the level of calibration.Consistent with this, self-reported metacognitive engagement on the CAIMS positively predicted overestimation and calibration error rather than reducing them, indicating that users who believe they are monitoring their own reasoning are not the users whose confidence tracks correctness (also replicating \cite{FERNANDES2026108779}). A fluent and internally coherent rendering of reasoning renders user-side monitoring redundant, with model coherence substituting for the user's evaluation \cite{}. Thus, appropriate calibration, complementarity, and reliance in HAI with reasoning traces may depend on whether the interface protects the user's own reasoning from the model's fluency.
+
+% Contrary to the hypothesis that reasoning traces would improve task accuracy relative to no trace, participants in the full-trace condition performed significantly worse than those in both the answer-only condition ($M_\text{diff} = -0.72$, $p_\text{adj} < .001$) and the summary condition ($M_\text{diff} = 0.65$, $p_\text{adj} < .001$). Participants in \textit{Answer-only} and \textit{Summary-trace} solved a comparable number of problems ($M = 6.18$ and $M = 6.11$, respectively), while \textit{Full-trace} participants solved on average only 5.46 items, barely above the model-alone benchmark of 5.00. This pattern suggests that summary traces preserved human performance at the no-trace baseline, whereas full traces impaired it.
+
+% Our study examined how different formats of reasoning traces affect task performance, metacognitive accuracy, cognitive load, trust, and user experience in AI-assisted reasoning tasks. Across all five research questions, the results point to a consistent pattern of exposing users to more reasoning output did not improve their performance. Participants who were exposed to full traces (\textit{Full-trace}) performed significantly worse and overestimated their performance to a greater degree than those who had no trace at all (\textit{Answer-only}). Summary of traces (\textit{Summary-trace}) preserved task performance at the no-trace baseline and led to lower overestimation levels, yet failed to support participants' metacognitive accuracy in any condition. 
+
+% Reasoning traces are often treated as transparency mechanisms and are assumed to help users understand why the model produced an answer, therefore supporting better judgment. Our findings complicate this assumption. Full traces made the model’s answer appear more inspectable and internally coherent, yet this additional information did not translate into better performance or calibration. Instead, it may have created an illusion of understanding \cite{fisher2021harder} due to the verbose and apparent fluency of the model, leading participants to trust the model's answer.
+
+
+% These findings suggest that providing users with more information about how a model arrived at its answer does not necessarily support better reasoning, and may in some cases undermine it.
+
+% \subsection{Full Reasoning Traces and Task Performance}
+% Contrary to the hypothesis that reasoning traces would improve task accuracy relative to no trace, participants in the full-trace condition performed significantly worse than those in both the answer-only condition ($M_\text{diff} = -0.72$, $p_\text{adj} < .001$) and the summary condition ($M_\text{diff} = 0.65$, $p_\text{adj} < .001$). Participants in \textit{Answer-only} and \textit{Summary-trace} solved a comparable number of problems ($M = 6.18$ and $M = 6.11$, respectively), while \textit{Full-trace} participants solved on average only 5.46 items, barely above the model-alone benchmark of 5.00. This pattern suggests that summary traces preserved human performance at the no-trace baseline, whereas full traces impaired it.
+
+
+\subsection{Reasoning traces as an interface artifact}
+One key concern cuts across the data. Given that reasoning traces cannot serve as cues for correctness and, thus, support appropriate metacognitive calibration, their design value should lie at least in their capacity to serve model interpretability. Recent work, however, shows that chain-of-thought outputs diverge from the internal computations that produce a model's answer \cite{}, with model reasoning and observed behavior coming apart \cite{}. %On this view, a trace displayed to a user does not serve interpretability but functions as a rendering of reasoning seemingly optimized for the user.
+
+Taking this view, users in the Full-trace and Summary-trace conditions may not be calibrating their decisions against interpretability cues derived from internal model states, but against a \textit{rendering} of reasoning produced for the user. The trace is thus best understood as an interface artifact \cite{} whose user-centered persuasive properties are partly decoupled from its diagnostic ones. This faithfulness problem, therefore, compounds the metacognitive one: users form increasingly confident judgments on the basis of cues that are themselves unreliable representations of model behavior. This echoes the XAI distinction between proxy and faithful explanations \cite{} and longstanding findings that fluent external information inflates perceived understanding without improving judgment \cite{}. From this lens, reasoning traces in LLMs inherit both properties at once, and interpretations of such interfaces as transparency tools should be understood accordingly.
+
+
+Our qualitative data points to a second fundamental issue of reasoning traces in LLM interaction. Across both \textit{Full-trace} and \textit{Summary-trace}, participants used traces in a multitude of ways: to offload their own reasoning, to structure their own reasoning, as an anchor for calibration, or viewed them as a burden. Of these, only calibration would be genuine problem solving that has the potential for synergy in HAI. All other strategies yield following rather than discourse with the AI and, thus, bring parity with AI in terms of cognitive performance which in terms of \citet{vaccaro2024combinations}, results in AI augmentation, i.e., humans performing on par with AI. 
+
+
+\subsection{Design Implications}
+Our findings expose three directions of exposing reasoning traces to users. First, across all measures, summaries appeared to preserve task performance as compared to full-traces or no-traces baseline, with a slight overestimation relative to full-traces but matching full traces in terms of trust and UX. Coalating this with our qualitative data that shows how traces are largely ignored when displayed in full, it appears that verbose reasoning traces seem to bear little benefit for the user. 
+Second, given the concerns of faithfulness in traces and the decoupling of coherence and performance gains, design should be careful not to imply that visible and plausible traces certify the correctness of the answer. Thus, framing of reasoning traces as windows into the inner working of a model seems to be neither correct \cite{} but also not usefull for LLM users and must be toned down. 
+Third, the qualitative data suggest that the real value of a trace may not lie in the trace itself but in the opportunity it creates for users to articulate their own reasoning before comparing it to the model's. From this perspective, what matters is less the format or even the quality or faithfulness of the trace but rather whether the interface elicits the user's own thinking in the first place. Simple scaffolds — prompting users to describe their approach, intuition, or tentative solution while the model is generating its response ("What do you think?"), may potentially hold more promise as metacognitive interventions than refinements to the trace or the interface to traces itself. Thus, one can speculate that making the user form human reasoning traces in the first place may be more important than the design of reasoning traces from an HAI perspective \cite{FERNANDES2026108779}. 
+
+
+
+\subsection{Limitations and Future Work}
+Our study has several limitations that bound the interpretation of its findings. 
+
+First, we rely on LSAT logical reasoning, which may not capture the diversity of real-world reasoning and likely overlaps with the model's training data. However, the models were far from ceiling on the retained items ($M = 5.00$ out of 10), and the mechanism we identify, fluent rendering inflating perceived understanding without improving judgment, is generic to settings where users must form a judgment without cheap external verification. A follow-up would manipulate verifiability within a fixed task, contrasting items where ground truth is one click away (calculator, unit test, search) with items where it is not, to test whether traces support calibration only when an external verifier is present.
+
+Second, we tested several models of one family with one rendering of full and summary traces, leaving the verbosity dose-response curve unmeasured. The practical design space, however, has already converged on roughly the two patterns we contrast, and the underlying psychological mechanism is robust aligning with persuasion research \cite{}. More variations in surface style would likely scale, not flip, our effects. A sharper test would hold final-answer accuracy constant and contrast uncertainty-marked traces against fluent, confident traces, similar to ~\citet{kim2024m}.
+
+Third, like \citet{FERNANDES2026108779}, we observe that AI assistance can boost performance without commensurate gains in metacognitive accuracy; reasoning traces appear to deepen, rather than repair, this effect. Because we measure trust, confidence, and bias jointly, we cannot fully separate calibration from authority effects. A more controlled follow-up would impose a disagreement schedule in dialog, forcing the model to push back on the user a fixed fraction of the time independent of correctness, and asking whether users update symmetrically when right and when wrong.
+
+Fourth and finally, our design speaks to in-the-moment calibration, not to long-term learning or deskilling~\cite{bastani2024generative}. A longitudinal study approach could research prolonged trace exposure but unaided metacognition to test how sustained exposure to confident traces erodes users' ability to know when they are wrong on tasks they have always been able to do. 
+
+Fifth, a methodological caveat concerns model identity: Full-trace was instantiated with gpt-oss-20b, while Answer-only and Summary-trace used GPT-5. Items were pre-screened so that both models achieved the same mean performance  at about 50\5 on retained items, mitigating ability differences, but response style, error patterns, and surface fluency may still differ between models. The Full-trace effect should therefore be read as conditioned on an open-weight reasoning model that exposes verbose intermediate steps. 
+
+
+%Third, we relied on LSAT questions as our logical reasoning task. While these assess logical reasoning, they may not capture the diversity of real-world reasoning skills or domains. Furthermore, these tasks might overlap with the AI’s training data, limiting generalizability. However, since ChatGPT-4o's performance was imperfect (68.25\%), we believe our findings still apply to other tasks.
+
+%Fourth, our focus on LSAT-based reasoning limits the scope of metacognitive biases across domains. Future research should use diverse tasks (e.g., writing creative texts with an LLM) to examine how AI interaction affects metacognitive monitoring and whether improvements in accuracy generalize across tasks.
+
+
+\section{Conclusion}
+
+We examined how the shape of LLM reasoning traces affects performance, metacognition, trust, and usability in a preregistered between-subjects study ($N=559$) on LSAT-style reasoning. Exposing users to more reasoning did not support interaction: full traces impaired performance relative to an answer-only baseline and produced the largest overestimation gap, while summaries merely preserved performance without improving metacognitive accuracy. Despite delivering no performance or calibration benefit, both trace conditions were rated as more trustworthy. We argue that reasoning traces are best understood as user-facing interface artifacts rather than transparent windows into model cognition, and that metacognitive calibration is unlikely to emerge from the trace itself. Designing for calibrated reliance in HAI will require interventions that elicit users' own reasoning before exposing them to the model's, shifting the design question from how to render the trace to how to support the user's thinking around it.
+
+\begin{acks}
+
+
+
+\end{acks}
+
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+
+\appendix
+
+\section{Tables}
+
+\subsection{Part One}
+
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-acmlarge.tex'.

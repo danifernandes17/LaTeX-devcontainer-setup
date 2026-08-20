@@ -4,22 +4,7 @@
     {
       "label": "Compile LaTeX",
       "type": "shell",
-      "command": "latexmk",
-      "args": [
-        "-pdf",
-        "-interaction=errorstopmode",
-        "-file-line-error",
-        "main.tex",
-        "&&",
-        "rm",
-        "-f",
-        "main.fdb_latexmk",
-        "main.fls",
-        "main.log",
-        "main.out",
-        "main.bbl",
-        "main.blg"
-      ],
+      "command": "latexmk -pdf -interaction=errorstopmode -file-line-error main.tex",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -31,6 +16,27 @@
         "focus": true,
         "panel": "shared"
       }
+    },
+    {
+      "label": "Clean LaTeX",
+      "type": "shell",
+      "command": "latexmk -C main.tex",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Clean & Compile LaTeX",
+      "dependsOn": [
+        "Clean LaTeX",
+        "Compile LaTeX"
+      ],
+      "dependsOrder": "sequence",
+      "group": "build"
     }
   ]
 }

@@ -1,8 +1,1 @@
-qcircuit
-standalone
-geometry
-enumitem
-pgf
-quantikz
-float
-braket
+amsfonts

@@ -1,0 +1,1499 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{108}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Ackerman and Thompson(2017)]%
+        {ackerman2017meta}
+\bibfield{author}{\bibinfo{person}{Rakefet Ackerman} {and}
+  \bibinfo{person}{Valerie~A. Thompson}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Meta-Reasoning: Monitoring and Control of Thinking
+  and Reasoning}.
+\newblock \bibinfo{journal}{\emph{Trends in Cognitive Sciences}}
+  \bibinfo{volume}{21}, \bibinfo{number}{8} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{607--617}.
+\newblock
+\showISSN{1364-6613}
+\href{https://doi.org/10.1016/j.tics.2017.05.004}{doi:\nolinkurl{10.1016/j.tics.2017.05.004}}
+
+
+\bibitem[Alberola et~al\mbox{.}(2018)]%
+        {alberola2018creation}
+\bibfield{author}{\bibinfo{person}{Catherine Alberola},
+  \bibinfo{person}{G{\"o}tz Walter}, {and} \bibinfo{person}{Henning Brau}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Creation of a short version of the user experience
+  questionnaire UEQ}.
+\newblock \bibinfo{journal}{\emph{i-com}} \bibinfo{volume}{17},
+  \bibinfo{number}{1} (\bibinfo{year}{2018}), \bibinfo{pages}{57--64}.
+\newblock
+\href{https://doi.org/10.1515/icom-2017-0032}{doi:\nolinkurl{10.1515/icom-2017-0032}}
+
+
+\bibitem[{Alibaba Cloud}(2026)]%
+        {alibaba2026deepthinking}
+\bibfield{author}{\bibinfo{person}{{Alibaba Cloud}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Deep Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.alibabacloud.com/help/en/model-studio/deep-thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Alter and Oppenheimer(2009)]%
+        {alter2009uniting}
+\bibfield{author}{\bibinfo{person}{Adam~L. Alter} {and}
+  \bibinfo{person}{Daniel~M Oppenheimer}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Uniting the tribes of fluency to form a
+  metacognitive nation}.
+\newblock \bibinfo{journal}{\emph{Personality and social psychology review}}
+  \bibinfo{volume}{13}, \bibinfo{number}{3} (\bibinfo{year}{2009}),
+  \bibinfo{pages}{219--235}.
+\newblock
+\href{https://doi.org/10.1177/1088868309341564}{doi:\nolinkurl{10.1177/1088868309341564}}
+
+
+\bibitem[Alter et~al\mbox{.}(2007)]%
+        {alter_overcoming_2007}
+\bibfield{author}{\bibinfo{person}{Adam~L. Alter}, \bibinfo{person}{Daniel~M.
+  Oppenheimer}, \bibinfo{person}{Nicholas Epley}, {and}
+  \bibinfo{person}{Rebecca~N. Eyre}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Overcoming intuition: {Metacognitive} difficulty
+  activates analytic reasoning.}
+\newblock \bibinfo{journal}{\emph{Journal of Experimental Psychology: General}}
+  \bibinfo{volume}{136}, \bibinfo{number}{4} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{569--576}.
+\newblock
+\showISSN{1939-2222, 0096-3445}
+\href{https://doi.org/10.1037/0096-3445.136.4.569}{doi:\nolinkurl{10.1037/0096-3445.136.4.569}}
+
+
+\bibitem[{Anthropic}(2025a)]%
+        {anthropic2025extendeddocs}
+\bibfield{author}{\bibinfo{person}{{Anthropic}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{Building with Extended Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20251203083408/https://platform.claude.com/docs/en/build-with-claude/extended-thinking}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2025-12-03; the live page has since been
+  replaced by the current Thinking guide (anthropic2026thinking). Accessed:
+  2026-08-18}.
+
+
+\bibitem[{Anthropic}(2025b)]%
+        {anthropic2025extended}
+\bibfield{author}{\bibinfo{person}{{Anthropic}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{Claude's Extended Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.anthropic.com/news/visible-extended-thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-01}.
+
+
+\bibitem[{Anthropic}(2025c)]%
+        {anthropic2025claude4}
+\bibfield{author}{\bibinfo{person}{{Anthropic}}.}
+  \bibinfo{year}{2025}\natexlab{c}.
+\newblock \bibinfo{title}{Introducing {Claude} 4}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.anthropic.com/news/claude-4}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{Anthropic}(2025d)]%
+        {anthropic2025think}
+\bibfield{author}{\bibinfo{person}{{Anthropic}}.}
+  \bibinfo{year}{2025}\natexlab{d}.
+\newblock \bibinfo{title}{The ``Think'' Tool: Enabling {Claude} to Stop and
+  Think}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.anthropic.com/engineering/claude-think-tool}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-01}.
+
+
+\bibitem[{Anthropic}(2026)]%
+        {anthropic2026thinking}
+\bibfield{author}{\bibinfo{person}{{Anthropic}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://platform.claude.com/docs/en/build-with-claude/thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Association et~al\mbox{.}(2013)]%
+        {world2013world}
+\bibfield{author}{\bibinfo{person}{World~Medical Association} {et~al\mbox{.}}}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{World Medical Association Declaration of Helsinki:
+  ethical principles for medical research involving human subjects}.
+\newblock \bibinfo{journal}{\emph{Jama}} \bibinfo{volume}{310},
+  \bibinfo{number}{20} (\bibinfo{year}{2013}), \bibinfo{pages}{2191--2194}.
+\newblock
+\href{https://doi.org/10.1001/jama.2013.281053}{doi:\nolinkurl{10.1001/jama.2013.281053}}
+
+
+\bibitem[Bangor et~al\mbox{.}(2008)]%
+        {bangor2008empirical}
+\bibfield{author}{\bibinfo{person}{Aaron Bangor}, \bibinfo{person}{Philip~T
+  Kortum}, {and} \bibinfo{person}{James~T Miller}.}
+  \bibinfo{year}{2008}\natexlab{}.
+\newblock \showarticletitle{An empirical evaluation of the system usability
+  scale}.
+\newblock \bibinfo{journal}{\emph{Intl. Journal of Human--Computer
+  Interaction}} \bibinfo{volume}{24}, \bibinfo{number}{6}
+  (\bibinfo{year}{2008}), \bibinfo{pages}{574--594}.
+\newblock
+\href{https://doi.org/10.1080/10447310802205776}{doi:\nolinkurl{10.1080/10447310802205776}}
+
+
+\bibitem[Bansal et~al\mbox{.}(2021)]%
+        {10.1145/3411764.3445717}
+\bibfield{author}{\bibinfo{person}{Gagan Bansal}, \bibinfo{person}{Tongshuang
+  Wu}, \bibinfo{person}{Joyce Zhou}, \bibinfo{person}{Raymond Fok},
+  \bibinfo{person}{Besmira Nushi}, \bibinfo{person}{Ece Kamar},
+  \bibinfo{person}{Marco~Tulio Ribeiro}, {and} \bibinfo{person}{Daniel Weld}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Does the Whole Exceed its Parts? The Effect of AI
+  Explanations on Complementary Team Performance}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2021 CHI Conference on Human
+  Factors in Computing Systems}} (Yokohama, Japan) \emph{(\bibinfo{series}{CHI
+  '21})}. \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{81},
+  \bibinfo{numpages}{16}~pages.
+\newblock
+\showISBNx{9781450380966}
+\href{https://doi.org/10.1145/3411764.3445717}{doi:\nolinkurl{10.1145/3411764.3445717}}
+
+
+\bibitem[Barez et~al\mbox{.}(2025)]%
+        {barez2025chain}
+\bibfield{author}{\bibinfo{person}{Fazl Barez}, \bibinfo{person}{Tung-Yu Wu},
+  \bibinfo{person}{Iv{\'a}n Arcuschin}, \bibinfo{person}{Michael Lan},
+  \bibinfo{person}{Vincent Wang}, \bibinfo{person}{Noah Siegel},
+  \bibinfo{person}{Nicolas Collignon}, \bibinfo{person}{Clement Neo},
+  \bibinfo{person}{Isabelle Lee}, \bibinfo{person}{Alasdair Paren},
+  {et~al\mbox{.}}} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Chain-of-thought is not explainability}.
+\newblock \bibinfo{journal}{\emph{Preprint, alphaXiv}} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{v1}.
+\newblock
+\urldef\tempurl%
+\url{https://aigi.ox.ac.uk/publications/chain-of-thought-is-not-explainability/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bastani et~al\mbox{.}(2024)]%
+        {bastani2024generative}
+\bibfield{author}{\bibinfo{person}{Hamsa Bastani}, \bibinfo{person}{Osbert
+  Bastani}, \bibinfo{person}{Alp Sungu}, \bibinfo{person}{Haosen Ge},
+  \bibinfo{person}{{\"O}zge Kabakc{\i}}, {and} \bibinfo{person}{Rei Mariman}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Generative AI Can Harm Learning}.
+\newblock \bibinfo{journal}{\emph{Available at SSRN 4895486}}
+  \bibinfo{volume}{4895486} (\bibinfo{year}{2024}).
+\newblock
+\href{https://doi.org/10.2139/ssrn.4895486}{doi:\nolinkurl{10.2139/ssrn.4895486}}
+
+
+\bibitem[Basu~Mallick et~al\mbox{.}(2025)]%
+        {google2025thoughtsummaries}
+\bibfield{author}{\bibinfo{person}{Shrestha Basu~Mallick},
+  \bibinfo{person}{Logan Kilpatrick}, \bibinfo{person}{Alisa Fortin}, {and}
+  \bibinfo{person}{Ivan Solovyev}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Gemini {API} {I/O} Updates}.
+\newblock
+  \bibinfo{howpublished}{\url{https://developers.googleblog.com/en/gemini-api-io-updates/}}.
+\newblock
+\newblock
+\shownote{Published 2025-05-23. Accessed: 2026-08-18}.
+
+
+\bibitem[Bertrand et~al\mbox{.}(2022)]%
+        {bertrand2022cognitive}
+\bibfield{author}{\bibinfo{person}{Astrid Bertrand}, \bibinfo{person}{Rafik
+  Belloum}, \bibinfo{person}{James~R. Eagan}, {and} \bibinfo{person}{Winston
+  Maxwell}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{How Cognitive Biases Affect XAI-assisted
+  Decision-making: A Systematic Review}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2022 AAAI/ACM Conference on AI,
+  Ethics, and Society}} (Oxford, United Kingdom) \emph{(\bibinfo{series}{AIES
+  '22})}. \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{78–91}.
+\newblock
+\showISBNx{9781450392471}
+\href{https://doi.org/10.1145/3514094.3534164}{doi:\nolinkurl{10.1145/3514094.3534164}}
+
+
+\bibitem[Brooke et~al\mbox{.}(1996)]%
+        {brooke1996sus}
+\bibfield{author}{\bibinfo{person}{John Brooke} {et~al\mbox{.}}}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{SUS-A quick and dirty usability scale}.
+\newblock \bibinfo{journal}{\emph{Usability evaluation in industry}}
+  \bibinfo{volume}{189}, \bibinfo{number}{194} (\bibinfo{year}{1996}),
+  \bibinfo{pages}{4--7}.
+\newblock
+\urldef\tempurl%
+\url{https://digital.ahrq.gov/sites/default/files/docs/survey/systemusabilityscale%2528sus%2529_comp%255B1%255D.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Bu\c{c}inca et~al\mbox{.}(2021)]%
+        {10.1145/3449287}
+\bibfield{author}{\bibinfo{person}{Zana Bu\c{c}inca},
+  \bibinfo{person}{Maja~Barbara Malaya}, {and} \bibinfo{person}{Krzysztof~Z.
+  Gajos}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{To Trust or to Think: Cognitive Forcing Functions
+  Can Reduce Overreliance on AI in AI-assisted Decision-making}.
+\newblock \bibinfo{journal}{\emph{Proc. ACM Hum.-Comput. Interact.}}
+  \bibinfo{volume}{5}, \bibinfo{number}{CSCW1}, Article
+  \bibinfo{articleno}{188} (\bibinfo{date}{April} \bibinfo{year}{2021}),
+  \bibinfo{numpages}{21}~pages.
+\newblock
+\href{https://doi.org/10.1145/3449287}{doi:\nolinkurl{10.1145/3449287}}
+
+
+\bibitem[Bu\c{c}inca et~al\mbox{.}(2025)]%
+        {buccinca2025contrastive}
+\bibfield{author}{\bibinfo{person}{Zana Bu\c{c}inca},
+  \bibinfo{person}{Siddharth Swaroop}, \bibinfo{person}{Amanda~E. Paluch},
+  \bibinfo{person}{Finale Doshi-Velez}, {and} \bibinfo{person}{Krzysztof~Z.
+  Gajos}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Contrastive Explanations That Anticipate Human
+  Misconceptions Can Improve Human Decision-Making Skills}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2025 CHI Conference on Human
+  Factors in Computing Systems}} \emph{(\bibinfo{series}{CHI '25})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{1024},
+  \bibinfo{numpages}{25}~pages.
+\newblock
+\showISBNx{9798400713941}
+\href{https://doi.org/10.1145/3706598.3713229}{doi:\nolinkurl{10.1145/3706598.3713229}}
+
+
+\bibitem[Chen et~al\mbox{.}(2025)]%
+        {chen2025lot}
+\bibfield{author}{\bibinfo{person}{Yida Chen}, \bibinfo{person}{Yuning Mao},
+  \bibinfo{person}{Xianjun Yang}, {et~al\mbox{.}}}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Your Thoughts Tell Who You Are: Characterize the
+  Reasoning Patterns of {LRMs}}.
+\newblock
+\showeprint[arxiv]{2509.24147}
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Clarke and Braun(2017)]%
+        {clarke2017thematic}
+\bibfield{author}{\bibinfo{person}{Victoria Clarke} {and}
+  \bibinfo{person}{Virginia Braun}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Thematic analysis}.
+\newblock \bibinfo{journal}{\emph{The journal of positive psychology}}
+  \bibinfo{volume}{12}, \bibinfo{number}{3} (\bibinfo{year}{2017}),
+  \bibinfo{pages}{297--298}.
+\newblock
+\href{https://doi.org/10.1080/17439760.2016.1262613}{doi:\nolinkurl{10.1080/17439760.2016.1262613}}
+
+
+\bibitem[Colombatto and Fleming(2023)]%
+        {colombatto2023illusions}
+\bibfield{author}{\bibinfo{person}{Clara Colombatto} {and}
+  \bibinfo{person}{Stephen Fleming}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Illusions of confidence in artificial systems}.
+\newblock  (\bibinfo{date}{09} \bibinfo{year}{2023}).
+\newblock
+\href{https://doi.org/10.31234/osf.io/mjx2v}{doi:\nolinkurl{10.31234/osf.io/mjx2v}}
+
+
+\bibitem[Colombatto et~al\mbox{.}(2025)]%
+        {colombatto2025metacognition}
+\bibfield{author}{\bibinfo{person}{Clara Colombatto}, \bibinfo{person}{Sean
+  Rintel}, {and} \bibinfo{person}{Lev Tankelevitch}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Metacognition and Confidence Dynamics in Advice
+  Taking from Generative AI}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2510.26508}}
+  (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/arXiv.2510.26508}{doi:\nolinkurl{10.48550/arXiv.2510.26508}}
+
+
+\bibitem[{DeepSeek}(2025a)]%
+        {deepseek2025r1release}
+\bibfield{author}{\bibinfo{person}{{DeepSeek}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{DeepSeek-R1} Release}.
+\newblock
+  \bibinfo{howpublished}{\url{https://api-docs.deepseek.com/news/news250120}}.
+\newblock
+\newblock
+\shownote{Release note, published 2025-01-20. Accessed: 2026-08-18}.
+
+
+\bibitem[{DeepSeek}(2025b)]%
+        {deepseek2025thinking}
+\bibfield{author}{\bibinfo{person}{{DeepSeek}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{Thinking Mode --- {API} Documentation}.
+\newblock
+  \bibinfo{howpublished}{\url{https://api-docs.deepseek.com/guides/thinking_mode}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{DeepSeek-AI}(2025a)]%
+        {deepseek2025r1card}
+\bibfield{author}{\bibinfo{person}{{DeepSeek-AI}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{DeepSeek-R1}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/deepseek-ai/DeepSeek-R1}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{DeepSeek-AI}(2025b)]%
+        {deepseek2025v32card}
+\bibfield{author}{\bibinfo{person}{{DeepSeek-AI}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{{DeepSeek-V3.2: Efficient Reasoning \& Agentic AI}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/deepseek-ai/DeepSeek-V3.2}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{DeepSeek-AI}(2026)]%
+        {deepseek2026v4card}
+\bibfield{author}{\bibinfo{person}{{DeepSeek-AI}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{DeepSeek-V4: Towards Highly Efficient Million-Token
+  Context Intelligence }}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[Draxler et~al\mbox{.}(2023)]%
+        {draxler2023gender}
+\bibfield{author}{\bibinfo{person}{Fiona Draxler}, \bibinfo{person}{Daniel
+  Buschek}, \bibinfo{person}{Mikke Tavast}, \bibinfo{person}{Perttu
+  Hämäläinen}, \bibinfo{person}{Albrecht Schmidt}, \bibinfo{person}{Juhi
+  Kulshrestha}, {and} \bibinfo{person}{Robin Welsch}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{Gender, Age, and Technology Education Influence the
+  Adoption and Appropriation of LLMs}.
+\newblock
+\showeprint[arxiv]{2310.06556}~[cs.CY]
+
+
+\bibitem[Draxler et~al\mbox{.}(2024)]%
+        {draxlerghost24}
+\bibfield{author}{\bibinfo{person}{Fiona Draxler}, \bibinfo{person}{Anna
+  Werner}, \bibinfo{person}{Florian Lehmann}, \bibinfo{person}{Matthias Hoppe},
+  \bibinfo{person}{Albrecht Schmidt}, \bibinfo{person}{Daniel Buschek}, {and}
+  \bibinfo{person}{Robin Welsch}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{The AI Ghostwriter Effect: When Users do not
+  Perceive Ownership of AI-Generated Text but Self-Declare as Authors}.
+\newblock \bibinfo{journal}{\emph{ACM Trans. Comput.-Hum. Interact.}}
+  \bibinfo{volume}{31}, \bibinfo{number}{2}, Article \bibinfo{articleno}{25}
+  (\bibinfo{date}{2} \bibinfo{year}{2024}), \bibinfo{numpages}{40}~pages.
+\newblock
+\showISSN{1073-0516}
+\href{https://doi.org/10.1145/3637875}{doi:\nolinkurl{10.1145/3637875}}
+
+
+\bibitem[Eiband et~al\mbox{.}(2019)]%
+        {eiband2019impact}
+\bibfield{author}{\bibinfo{person}{Malin Eiband}, \bibinfo{person}{Daniel
+  Buschek}, \bibinfo{person}{Alexander Kremer}, {and} \bibinfo{person}{Heinrich
+  Hussmann}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{The impact of placebic explanations on trust in
+  intelligent systems}. In \bibinfo{booktitle}{\emph{Extended abstracts of the
+  2019 CHI conference on human factors in computing systems}}.
+  \bibinfo{pages}{1--6}.
+\newblock
+\href{https://doi.org/10.1145/3290607.3312787}{doi:\nolinkurl{10.1145/3290607.3312787}}
+
+
+\bibitem[Engelbart(1962)]%
+        {engelbart1962augmenting}
+\bibfield{author}{\bibinfo{person}{Douglas~C Engelbart}.}
+  \bibinfo{year}{1962}\natexlab{}.
+\newblock \showarticletitle{Augmenting human intellect: A conceptual
+  framework}.
+\newblock \bibinfo{journal}{\emph{Menlo Park, CA}} (\bibinfo{year}{1962}),
+  \bibinfo{pages}{21}.
+\newblock
+
+
+\bibitem[Fernandes et~al\mbox{.}(2026)]%
+        {FERNANDES2026108779}
+\bibfield{author}{\bibinfo{person}{Daniela Fernandes}, \bibinfo{person}{Steeven
+  Villa}, \bibinfo{person}{Salla Nicholls}, \bibinfo{person}{Otso Haavisto},
+  \bibinfo{person}{Daniel Buschek}, \bibinfo{person}{Albrecht Schmidt},
+  \bibinfo{person}{Thomas Kosch}, \bibinfo{person}{Chenxinran Shen}, {and}
+  \bibinfo{person}{Robin Welsch}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{AI makes you smarter but none the wiser: The
+  disconnect between performance and metacognition}.
+\newblock \bibinfo{journal}{\emph{Computers in Human Behavior}}
+  \bibinfo{volume}{175} (\bibinfo{year}{2026}), \bibinfo{pages}{108779}.
+\newblock
+\showISSN{0747-5632}
+\href{https://doi.org/10.1016/j.chb.2025.108779}{doi:\nolinkurl{10.1016/j.chb.2025.108779}}
+
+
+\bibitem[Fiedler et~al\mbox{.}(2019)]%
+        {fiedler2019metacognition}
+\bibfield{author}{\bibinfo{person}{Klaus Fiedler}, \bibinfo{person}{Rakefet
+  Ackerman}, {and} \bibinfo{person}{Chiara Scarampi}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Metacognition: Monitoring and Controlling One’s
+  Own Knowledge, Reasoning and Decisions}.
+\newblock In \bibinfo{booktitle}{\emph{The Psychology of Human Thought: An
+  Introduction}}, \bibfield{editor}{\bibinfo{person}{Robert~J. Sternberg} {and}
+  \bibinfo{person}{Joachim Funke}} (Eds.). \bibinfo{publisher}{Heidelberg
+  University Publishing}, \bibinfo{pages}{89–111}.
+\newblock
+\href{https://doi.org/10.17885/heiup.470.c6669}{doi:\nolinkurl{10.17885/heiup.470.c6669}}
+
+
+\bibitem[Fisher and Oppenheimer(2021)]%
+        {fisher2021harder}
+\bibfield{author}{\bibinfo{person}{Matthew Fisher} {and}
+  \bibinfo{person}{Daniel~M Oppenheimer}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Harder than you think: How outside assistance leads
+  to overconfidence}.
+\newblock \bibinfo{journal}{\emph{Psychological Science}} \bibinfo{volume}{32},
+  \bibinfo{number}{4} (\bibinfo{year}{2021}), \bibinfo{pages}{598--610}.
+\newblock
+\href{https://doi.org/10.1177/0956797620975779}{doi:\nolinkurl{10.1177/0956797620975779}}
+
+
+\bibitem[Fleming(2024)]%
+        {fleming2024metacognition}
+\bibfield{author}{\bibinfo{person}{Stephen Fleming}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Metacognition and confidence: A review and
+  synthesis}.
+\newblock \bibinfo{journal}{\emph{Annual Review of Psychology}}
+  \bibinfo{volume}{75} (\bibinfo{year}{2024}), \bibinfo{pages}{241--268}.
+\newblock
+\href{https://doi.org/10.1146/annurev-psych-022423-032425}{doi:\nolinkurl{10.1146/annurev-psych-022423-032425}}
+
+
+\bibitem[{Frontier Model Forum}(2026)]%
+        {fmf2026cot}
+\bibfield{author}{\bibinfo{person}{{Frontier Model Forum}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Chain of Thought Monitorability}.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.frontiermodelforum.org/issue-briefs/chain-of-thought-monitorability/}}.
+\newblock
+\newblock
+\shownote{Issue brief. Accessed: 2026-08-12}.
+
+
+\bibitem[{Google}(2024)]%
+        {google2024thinkingmode}
+\bibfield{author}{\bibinfo{person}{{Google}}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Gemini 2.0 Flash Thinking Mode}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20241228115436/https://ai.google.dev/gemini-api/docs/thinking-mode}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2024-12-28; page since superseded.
+  Accessed: 2026-08-18}.
+
+
+\bibitem[{Google}(2025a)]%
+        {google2025thinking}
+\bibfield{author}{\bibinfo{person}{{Google}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{Gemini {API}: Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://ai.google.dev/gemini-api/docs/thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{Google}(2025b)]%
+        {google2025thinkingapr}
+\bibfield{author}{\bibinfo{person}{{Google}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{Gemini Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20250421003647/https://ai.google.dev/gemini-api/docs/thinking}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2025-04-21, before thought summaries
+  replaced raw thought display. Accessed: 2026-08-18}.
+
+
+\bibitem[{Google}(2025c)]%
+        {google2025thinkingnov}
+\bibfield{author}{\bibinfo{person}{{Google}}.}
+  \bibinfo{year}{2025}\natexlab{c}.
+\newblock \bibinfo{title}{Gemini Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20251124081656/https://ai.google.dev/gemini-api/docs/thinking}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2025-11-24, contemporaneous with the
+  Gemini 3 Pro release. Accessed: 2026-08-18}.
+
+
+\bibitem[{Google}(2026)]%
+        {google2026gemmathinking}
+\bibfield{author}{\bibinfo{person}{{Google}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Thinking Mode in {Gemma}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://ai.google.dev/gemma/docs/capabilities/thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[Jacovi and Goldberg(2020)]%
+        {jacovi-goldberg-2020-towards}
+\bibfield{author}{\bibinfo{person}{Alon Jacovi} {and} \bibinfo{person}{Yoav
+  Goldberg}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Towards Faithfully Interpretable {NLP} Systems: How
+  Should We Define and Evaluate Faithfulness?}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 58th Annual Meeting of the
+  Association for Computational Linguistics}},
+  \bibfield{editor}{\bibinfo{person}{Dan Jurafsky}, \bibinfo{person}{Joyce
+  Chai}, \bibinfo{person}{Natalie Schluter}, {and} \bibinfo{person}{Joel
+  Tetreault}} (Eds.). \bibinfo{publisher}{Association for Computational
+  Linguistics}, \bibinfo{address}{Online}, \bibinfo{pages}{4198--4205}.
+\newblock
+\href{https://doi.org/10.18653/v1/2020.acl-main.386}{doi:\nolinkurl{10.18653/v1/2020.acl-main.386}}
+
+
+\bibitem[Johnson et~al\mbox{.}(1993)]%
+        {johnson_source_1993}
+\bibfield{author}{\bibinfo{person}{Marcia~K. Johnson}, \bibinfo{person}{Shahin
+  Hashtroudi}, {and} \bibinfo{person}{D.~Stephen Lindsay}.}
+  \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{Source monitoring.}
+\newblock \bibinfo{journal}{\emph{Psychological Bulletin}}
+  \bibinfo{volume}{114}, \bibinfo{number}{1} (\bibinfo{year}{1993}),
+  \bibinfo{pages}{3--28}.
+\newblock
+\showISSN{1939-1455, 0033-2909}
+\href{https://doi.org/10.1037/0033-2909.114.1.3}{doi:\nolinkurl{10.1037/0033-2909.114.1.3}}
+\newblock
+\shownote{Publisher: American Psychological Association (APA)}.
+
+
+\bibitem[Katz et~al\mbox{.}(2024)]%
+        {katz2024gpt}
+\bibfield{author}{\bibinfo{person}{Daniel~Martin Katz},
+  \bibinfo{person}{Michael~James Bommarito}, \bibinfo{person}{Shang Gao}, {and}
+  \bibinfo{person}{Pablo Arredondo}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Gpt-4 passes the bar exam}.
+\newblock \bibinfo{journal}{\emph{Philosophical Transactions of the Royal
+  Society A}} \bibinfo{volume}{382}, \bibinfo{number}{2270}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{20230254}.
+\newblock
+\href{https://doi.org/10.1098/rsta.2023.0254}{doi:\nolinkurl{10.1098/rsta.2023.0254}}
+
+
+\bibitem[Kelemen et~al\mbox{.}(2000)]%
+        {kelemen2000individual}
+\bibfield{author}{\bibinfo{person}{William~L. Kelemen},
+  \bibinfo{person}{Peter~J. Frost}, {and} \bibinfo{person}{Charles~A. Weaver}.}
+  \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{Individual differences in metacognition: {Evidence}
+  against a general metacognitive ability}.
+\newblock \bibinfo{journal}{\emph{Memory \& Cognition}} \bibinfo{volume}{28},
+  \bibinfo{number}{1} (\bibinfo{date}{Jan.} \bibinfo{year}{2000}),
+  \bibinfo{pages}{92--107}.
+\newblock
+\showISSN{1532-5946}
+\href{https://doi.org/10.3758/BF03211579}{doi:\nolinkurl{10.3758/BF03211579}}
+
+
+\bibitem[Kim et~al\mbox{.}(2024)]%
+        {kim2024m}
+\bibfield{author}{\bibinfo{person}{Sunnie S.~Y. Kim}, \bibinfo{person}{Q.~Vera
+  Liao}, \bibinfo{person}{Mihaela Vorvoreanu}, \bibinfo{person}{Stephanie
+  Ballard}, {and} \bibinfo{person}{Jennifer~Wortman Vaughan}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{"I'm Not Sure, But...": Examining the Impact of
+  Large Language Models' Uncertainty Expression on User Reliance and Trust}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2024 ACM Conference on Fairness,
+  Accountability, and Transparency}} (Rio de Janeiro, Brazil)
+  \emph{(\bibinfo{series}{FAccT '24})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{822–835}.
+\newblock
+\showISBNx{9798400704505}
+\href{https://doi.org/10.1145/3630106.3658941}{doi:\nolinkurl{10.1145/3630106.3658941}}
+
+
+\bibitem[{Kimi Team}(2026)]%
+        {kimi2026k3report}
+\bibfield{author}{\bibinfo{person}{{Kimi Team}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{Kimi K3}: Open Frontier Intelligence}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{Moonshot
+  AI}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Kloft et~al\mbox{.}(2024)]%
+        {kloft2023ai}
+\bibfield{author}{\bibinfo{person}{Agnes~Mercedes Kloft},
+  \bibinfo{person}{Robin Welsch}, \bibinfo{person}{Thomas Kosch}, {and}
+  \bibinfo{person}{Steeven Villa}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{"AI enhances our performance, I have no doubt this
+  one will do the same": The Placebo effect is robust to negative descriptions
+  of AI}. In \bibinfo{booktitle}{\emph{Proceedings of the CHI Conference on
+  Human Factors in Computing Systems}} (Honolulu, HI, USA)
+  \emph{(\bibinfo{series}{Chi '24})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article
+  \bibinfo{articleno}{299}, \bibinfo{numpages}{24}~pages.
+\newblock
+\showISBNx{9798400703300}
+\href{https://doi.org/10.1145/3613904.3642633}{doi:\nolinkurl{10.1145/3613904.3642633}}
+
+
+\bibitem[Kobiella et~al\mbox{.}(2024)]%
+        {Kobiella2024}
+\bibfield{author}{\bibinfo{person}{Charlotte Kobiella},
+  \bibinfo{person}{Yarhy~Said Flores~L\'{o}pez}, \bibinfo{person}{Franz
+  Waltenberger}, \bibinfo{person}{Fiona Draxler}, {and}
+  \bibinfo{person}{Albrecht Schmidt}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{"If the Machine Is As Good As Me, Then What Use Am
+  I?" – How the Use of ChatGPT Changes Young Professionals' Perception of
+  Productivity and Accomplishment}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the CHI Conference on Human Factors in Computing Systems}} (Honolulu, HI,
+  USA) \emph{(\bibinfo{series}{CHI '24})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA}, Article
+  \bibinfo{articleno}{1018}, \bibinfo{numpages}{16}~pages.
+\newblock
+\showISBNx{9798400703300}
+\href{https://doi.org/10.1145/3613904.3641964}{doi:\nolinkurl{10.1145/3613904.3641964}}
+
+
+\bibitem[Korbak et~al\mbox{.}(2025)]%
+        {korbak2025monitorability}
+\bibfield{author}{\bibinfo{person}{Tomek Korbak}, \bibinfo{person}{Mikita
+  Balesni}, \bibinfo{person}{Elizabeth Barnes}, \bibinfo{person}{Yoshua
+  Bengio}, {et~al\mbox{.}}} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{Chain of Thought Monitorability: A New and Fragile
+  Opportunity for {AI} Safety}.
+\newblock
+\showeprint[arxiv]{2507.11473}
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Kosch et~al\mbox{.}(2023)]%
+        {kosch2023placebo}
+\bibfield{author}{\bibinfo{person}{Thomas Kosch}, \bibinfo{person}{Robin
+  Welsch}, \bibinfo{person}{Lewis Chuang}, {and} \bibinfo{person}{Albrecht
+  Schmidt}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The Placebo Effect of Artificial Intelligence in
+  Human--Computer Interaction}.
+\newblock \bibinfo{journal}{\emph{ACM Transactions on Computer-Human
+  Interaction}} \bibinfo{volume}{29}, \bibinfo{number}{6}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{1--32}.
+\newblock
+\href{https://doi.org/10.1145/3529225}{doi:\nolinkurl{10.1145/3529225}}
+
+
+\bibitem[Kulesza et~al\mbox{.}(2013)]%
+        {6645235}
+\bibfield{author}{\bibinfo{person}{Todd Kulesza}, \bibinfo{person}{Simone
+  Stumpf}, \bibinfo{person}{Margaret Burnett}, \bibinfo{person}{Sherry Yang},
+  \bibinfo{person}{Irwin Kwan}, {and} \bibinfo{person}{Weng-Keen Wong}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Too much, too little, or just right? Ways
+  explanations impact end users' mental models}. In
+  \bibinfo{booktitle}{\emph{2013 IEEE Symposium on Visual Languages and Human
+  Centric Computing}}. \bibinfo{pages}{3--10}.
+\newblock
+\href{https://doi.org/10.1109/VLHCC.2013.6645235}{doi:\nolinkurl{10.1109/VLHCC.2013.6645235}}
+
+
+\bibitem[{LangChain}(2026)]%
+        {langchain_chatxai}
+\bibfield{author}{\bibinfo{person}{{LangChain}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{ChatXAI}}}.
+\newblock
+\urldef\tempurl%
+\url{https://reference.langchain.com/python/langchain-xai/chat_models/ChatXAI}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Lee et~al\mbox{.}(2026)]%
+        {lee2026reasoningflow}
+\bibfield{author}{\bibinfo{person}{Jinu Lee}, \bibinfo{person}{Shivam Agarwal},
+  \bibinfo{person}{Amruta Parulekar}, \bibinfo{person}{Siddarth Madala},
+  \bibinfo{person}{Dilek Hakkani-Tur}, {and} \bibinfo{person}{Julia
+  Hockenmaier}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{ReasoningFlow}: Discourse Structures for
+  Understanding {LLM} Reasoning Traces}.
+\newblock
+\showeprint[arxiv]{2606.05402}
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Lindsey et~al\mbox{.}(2025)]%
+        {lindsey2025biology}
+\bibfield{author}{\bibinfo{person}{Jack Lindsey}, \bibinfo{person}{Wes Gurnee},
+  \bibinfo{person}{Emmanuel Ameisen}, \bibinfo{person}{Brian Chen},
+  \bibinfo{person}{Adam Pearce}, \bibinfo{person}{Nicholas~L. Turner},
+  \bibinfo{person}{Craig Citro}, \bibinfo{person}{David Abrahams},
+  \bibinfo{person}{Shan Carter}, \bibinfo{person}{Basil Hosmer},
+  \bibinfo{person}{Jonathan Marcus}, \bibinfo{person}{Michael Sklar},
+  \bibinfo{person}{Adly Templeton}, \bibinfo{person}{Trenton Bricken},
+  \bibinfo{person}{Callum McDougall}, \bibinfo{person}{Hoagy Cunningham},
+  \bibinfo{person}{Thomas Henighan}, \bibinfo{person}{Adam Jermyn},
+  \bibinfo{person}{Andy Jones}, \bibinfo{person}{Andrew Persic},
+  \bibinfo{person}{Zhenyi Qi}, \bibinfo{person}{T.~Ben Thompson},
+  \bibinfo{person}{Sam Zimmerman}, \bibinfo{person}{Kelley Rivoire},
+  \bibinfo{person}{Thomas Conerly}, \bibinfo{person}{Chris Olah}, {and}
+  \bibinfo{person}{Joshua Batson}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{On the Biology of a Large Language Model}.
+\newblock \bibinfo{journal}{\emph{Transformer Circuits Thread}}
+  (\bibinfo{year}{2025}).
+\newblock
+\urldef\tempurl%
+\url{https://transformer-circuits.pub/2025/attribution-graphs/biology.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[{Meta}(2025)]%
+        {meta2025llama4}
+\bibfield{author}{\bibinfo{person}{{Meta}}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \bibinfo{title}{The {Llama} 4 Herd: The Beginning of a New Era of
+  Natively Multimodal {AI} Innovation}.
+\newblock
+  \bibinfo{howpublished}{\url{https://ai.meta.com/blog/llama-4-multimodal-intelligence/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{Meta}(2026)]%
+        {meta2026reasoning}
+\bibfield{author}{\bibinfo{person}{{Meta}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{Reasoning}.
+\newblock
+  \bibinfo{howpublished}{\url{https://ai.developer.meta.com/docs/reasoning/}}.
+\newblock
+\newblock
+\shownote{Meta Model {API} documentation. Accessed: 2026-08-18}.
+
+
+\bibitem[Miller(2019)]%
+        {MILLER20191}
+\bibfield{author}{\bibinfo{person}{Tim Miller}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Explanation in artificial intelligence: Insights
+  from the social sciences}.
+\newblock \bibinfo{journal}{\emph{Artificial Intelligence}}
+  \bibinfo{volume}{267} (\bibinfo{year}{2019}), \bibinfo{pages}{1--38}.
+\newblock
+\showISSN{0004-3702}
+\href{https://doi.org/10.1016/j.artint.2018.07.007}{doi:\nolinkurl{10.1016/j.artint.2018.07.007}}
+
+
+\bibitem[{Mistral AI}(2025a)]%
+        {mistral2025magistralpaper}
+\bibfield{author}{\bibinfo{person}{{Mistral AI}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{Magistral}}.
+\newblock
+\showeprint[arxiv]{2506.10910}~[cs.CL]
+\href{https://doi.org/10.48550/arXiv.2506.10910}{doi:\nolinkurl{10.48550/arXiv.2506.10910}}
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{Mistral AI}(2025b)]%
+        {mistral2025magistral}
+\bibfield{author}{\bibinfo{person}{{Mistral AI}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{{Magistral-Small-2506}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/mistralai/Magistral-Small-2506}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Mistral AI}(2026a)]%
+        {mistral2026small4}
+\bibfield{author}{\bibinfo{person}{{Mistral AI}}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{{Mistral-Small-4-119B-2603}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/mistralai/Mistral-Small-4-119B-2603}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Mistral AI}(2026b)]%
+        {mistral2026reasoning}
+\bibfield{author}{\bibinfo{person}{{Mistral AI}}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{Reasoning --- {Mistral} Documentation}.
+\newblock
+  \bibinfo{howpublished}{\url{https://docs.mistral.ai/capabilities/reasoning/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{Moonshot AI}(2025a)]%
+        {moonshot2025k2instruct}
+\bibfield{author}{\bibinfo{person}{{Moonshot AI}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{Kimi-K2-Instruct}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/moonshotai/Kimi-K2-Instruct}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Moonshot AI}(2025b)]%
+        {moonshot2025k2thinking}
+\bibfield{author}{\bibinfo{person}{{Moonshot AI}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{{Kimi K2} Thinking}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/moonshotai/Kimi-K2-Thinking}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{Moonshot AI}(2026a)]%
+        {moonshot2026k25}
+\bibfield{author}{\bibinfo{person}{{Moonshot AI}}.}
+  \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{{Kimi K2.5}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/moonshotai/Kimi-K2.5}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Moonshot AI}(2026b)]%
+        {moonshot2026k3blog}
+\bibfield{author}{\bibinfo{person}{{Moonshot AI}}.}
+  \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{{Kimi K3}: Open Frontier Intelligence}.
+\newblock \bibinfo{howpublished}{\url{https://kimi.ai/blog/kimi-k3}}.
+\newblock
+\newblock
+\shownote{Blog announcement. Accessed: 2026-08-18}.
+
+
+\bibitem[{Moonshot AI}(2026c)]%
+        {moonshot2026k3}
+\bibfield{author}{\bibinfo{person}{{Moonshot AI}}.}
+  \bibinfo{year}{2026}\natexlab{c}.
+\newblock \bibinfo{title}{{Kimi K3} Quickstart}.
+\newblock
+  \bibinfo{howpublished}{\url{https://platform.kimi.ai/docs/guide/kimi-k3-quickstart}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Nourani et~al\mbox{.}(2021)]%
+        {10.1145/3397481.3450639}
+\bibfield{author}{\bibinfo{person}{Mahsan Nourani}, \bibinfo{person}{Chiradeep
+  Roy}, \bibinfo{person}{Jeremy~E Block}, \bibinfo{person}{Donald~R Honeycutt},
+  \bibinfo{person}{Tahrima Rahman}, \bibinfo{person}{Eric Ragan}, {and}
+  \bibinfo{person}{Vibhav Gogate}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Anchoring Bias Affects Mental Model Formation and
+  User Reliance in Explainable AI Systems}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 26th International Conference on
+  Intelligent User Interfaces}} (College Station, TX, USA)
+  \emph{(\bibinfo{series}{IUI '21})}. \bibinfo{publisher}{Association for
+  Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{340–350}.
+\newblock
+\showISBNx{9781450380171}
+\href{https://doi.org/10.1145/3397481.3450639}{doi:\nolinkurl{10.1145/3397481.3450639}}
+
+
+\bibitem[{OpenAI}(2024a)]%
+        {openai2024learning}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2024}\natexlab{a}.
+\newblock \bibinfo{title}{Learning to Reason with {LLMs}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://openai.com/index/learning-to-reason-with-llms/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-01}.
+
+
+\bibitem[{OpenAI}(2024b)]%
+        {openai2024o1card}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2024}\natexlab{b}.
+\newblock \bibinfo{title}{{OpenAI} o1 System Card}.
+\newblock
+\showeprint[arxiv]{2412.16720}~[cs.AI]
+\href{https://doi.org/10.48550/arXiv.2412.16720}{doi:\nolinkurl{10.48550/arXiv.2412.16720}}
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{OpenAI}(2025a)]%
+        {openai2025monitorability}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{Evaluating Chain-of-Thought Monitorability}.
+\newblock
+  \bibinfo{howpublished}{\url{https://openai.com/index/evaluating-chain-of-thought-monitorability/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-05-01}.
+
+
+\bibitem[{OpenAI}(2025b)]%
+        {openai2025gptoss}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{{gpt-oss-120b} \& {gpt-oss-20b} Model Card}.
+\newblock
+\showeprint[arxiv]{2508.10925}
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{OpenAI}(2025c)]%
+        {openai2025o3o4mini}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2025}\natexlab{c}.
+\newblock \bibinfo{title}{Introducing {OpenAI} o3 and o4-mini}.
+\newblock
+  \bibinfo{howpublished}{\url{https://openai.com/index/introducing-o3-and-o4-mini/}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{OpenAI}(2025d)]%
+        {openai2025harmony}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2025}\natexlab{d}.
+\newblock \bibinfo{title}{{OpenAI} Harmony Response Format}.
+\newblock
+  \bibinfo{howpublished}{\url{https://developers.openai.com/cookbook/articles/openai-harmony}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{OpenAI}(2025e)]%
+        {openai2025reasoningapi}
+\bibfield{author}{\bibinfo{person}{{OpenAI}}.}
+  \bibinfo{year}{2025}\natexlab{e}.
+\newblock \bibinfo{title}{Reasoning models}.
+\newblock
+  \bibinfo{howpublished}{\url{https://developers.openai.com/api/docs/guides/reasoning}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[{Oracle}(2026)]%
+        {oracle2026grok3mini}
+\bibfield{author}{\bibinfo{person}{{Oracle}}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{xAI Grok 3 Mini} (Deprecated)}.
+\newblock
+  \bibinfo{howpublished}{\url{https://docs.oracle.com/en-us/iaas/Content/generative-ai/xai-grok-3-mini.htm}}.
+\newblock
+\newblock
+\shownote{Model card of an official Grok distribution channel: {xAI}'s Grok
+  models are offered on Oracle Cloud Infrastructure under a partnership
+  announced 2025-06-17. Accessed: 2026-08-18}.
+
+
+\bibitem[{Qwen Team}(2025a)]%
+        {qwen2025qwen3card}
+\bibfield{author}{\bibinfo{person}{{Qwen Team}}.}
+  \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{Qwen3-235B-A22B}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/Qwen/Qwen3-235B-A22B}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Qwen Team}(2025b)]%
+        {qwen2025qwq32b}
+\bibfield{author}{\bibinfo{person}{{Qwen Team}}.}
+  \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{{QwQ-32B}}.
+\newblock \bibinfo{howpublished}{\url{https://huggingface.co/Qwen/QwQ-32B}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[{Qwen Team}(2026)]%
+        {qwen2026qwen35card}
+\bibfield{author}{\bibinfo{person}{{Qwen Team}}.}
+  \bibinfo{year}{2026}\natexlab{}.
+\newblock \bibinfo{title}{{Qwen3.5-35B-A3B}}.
+\newblock
+  \bibinfo{howpublished}{\url{https://huggingface.co/Qwen/Qwen3.5-35B-A3B}}.
+\newblock
+\newblock
+\shownote{Hugging Face model card. Accessed: 2026-08-18}.
+
+
+\bibitem[Rafner et~al\mbox{.}(2022)]%
+        {rafner2022deskilling}
+\bibfield{author}{\bibinfo{person}{Janet Rafner}, \bibinfo{person}{Dominik
+  Dellermann}, \bibinfo{person}{Arthur Hjorth}, \bibinfo{person}{Dora
+  Veraszto}, \bibinfo{person}{Constance Kampf}, \bibinfo{person}{Wendy MacKay},
+  {and} \bibinfo{person}{Jacob Sherson}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Deskilling, upskilling, and reskilling: a case for
+  hybrid intelligence}.
+\newblock \bibinfo{journal}{\emph{Morals \& Machines}} \bibinfo{volume}{1},
+  \bibinfo{number}{2} (\bibinfo{year}{2022}), \bibinfo{pages}{24--39}.
+\newblock
+\href{https://doi.org/10.5771/2747-5174-2021-2-24}{doi:\nolinkurl{10.5771/2747-5174-2021-2-24}}
+
+
+\bibitem[Rahnev(2025)]%
+        {rahnev2025comprehensive}
+\bibfield{author}{\bibinfo{person}{Dobromir Rahnev}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{A comprehensive assessment of current methods for
+  measuring metacognition}.
+\newblock \bibinfo{journal}{\emph{Nature Communications}} \bibinfo{volume}{16},
+  \bibinfo{number}{1} (\bibinfo{year}{2025}), \bibinfo{pages}{701}.
+\newblock
+\href{https://doi.org/10.1038/s41467-025-56117-0}{doi:\nolinkurl{10.1038/s41467-025-56117-0}}
+
+
+\bibitem[Ramesh et~al\mbox{.}(2026)]%
+        {ramesh2026metacognitive}
+\bibfield{author}{\bibinfo{person}{Shri~Harini Ramesh},
+  \bibinfo{person}{Foroozan Daneshzand}, \bibinfo{person}{Babak Rashidi},
+  \bibinfo{person}{Shriti Raj}, \bibinfo{person}{Hariharan Subramonyam}, {and}
+  \bibinfo{person}{Fateme Rajabiyazdi}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Metacognitive Demands and Strategies While Using
+  Off-The-Shelf AI Conversational Agents for Health Information Seeking}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2026 CHI Conference on Human
+  Factors in Computing Systems}} \emph{(\bibinfo{series}{CHI '26})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, Article \bibinfo{articleno}{28},
+  \bibinfo{numpages}{16}~pages.
+\newblock
+\showISBNx{9798400722783}
+\href{https://doi.org/10.1145/3772318.3791647}{doi:\nolinkurl{10.1145/3772318.3791647}}
+
+
+\bibitem[Rozenblit and Keil(2002)]%
+        {rozenblit2002misunderstood}
+\bibfield{author}{\bibinfo{person}{Leonid Rozenblit} {and}
+  \bibinfo{person}{Frank Keil}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{The misunderstood limits of folk science: an
+  illusion of explanatory depth}.
+\newblock \bibinfo{journal}{\emph{Cognitive Science}} \bibinfo{volume}{26},
+  \bibinfo{number}{5} (\bibinfo{year}{2002}), \bibinfo{pages}{521--562}.
+\newblock
+\showISSN{0364-0213}
+\urldef\tempurl%
+\url{https://www.sciencedirect.com/science/article/pii/S0364021302000782}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Shultz and Zedeck(2011)]%
+        {shultz2011predicting}
+\bibfield{author}{\bibinfo{person}{Marjorie~M Shultz} {and}
+  \bibinfo{person}{Sheldon Zedeck}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Predicting lawyer effectiveness: Broadening the
+  basis for law school admission decisions}.
+\newblock \bibinfo{journal}{\emph{Law \& Social Inquiry}} \bibinfo{volume}{36},
+  \bibinfo{number}{3} (\bibinfo{year}{2011}), \bibinfo{pages}{620--661}.
+\newblock
+\href{https://doi.org/10.1111/j.1747-4469.2011.01245.x}{doi:\nolinkurl{10.1111/j.1747-4469.2011.01245.x}}
+
+
+\bibitem[Si et~al\mbox{.}(2024)]%
+        {si2024large}
+\bibfield{author}{\bibinfo{person}{Chenglei Si}, \bibinfo{person}{Navita
+  Goyal}, \bibinfo{person}{Tongshuang Wu}, \bibinfo{person}{Chen Zhao},
+  \bibinfo{person}{Shi Feng}, \bibinfo{person}{Hal Daum{\'e}~Iii}, {and}
+  \bibinfo{person}{Jordan Boyd-Graber}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Large Language Models Help Humans Verify
+  Truthfulness {--} Except When They Are Convincingly Wrong}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2024 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies (Volume 1: Long Papers)}},
+  \bibfield{editor}{\bibinfo{person}{Kevin Duh}, \bibinfo{person}{Helena
+  Gomez}, {and} \bibinfo{person}{Steven Bethard}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Mexico City, Mexico}, \bibinfo{pages}{1459--1474}.
+\newblock
+\href{https://doi.org/10.18653/v1/2024.naacl-long.81}{doi:\nolinkurl{10.18653/v1/2024.naacl-long.81}}
+
+
+\bibitem[Sidra and Mason(2026)]%
+        {Sidra03042026}
+\bibfield{author}{\bibinfo{person}{Sidra Sidra} {and} \bibinfo{person}{Claire
+  Mason}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Generative AI in Human-AI Collaboration: Validation
+  of the Collaborative AI Literacy and Collaborative AI Metacognition Scales
+  for Effective Use}.
+\newblock \bibinfo{journal}{\emph{International Journal of Human–Computer
+  Interaction}} \bibinfo{volume}{42}, \bibinfo{number}{7}
+  (\bibinfo{year}{2026}), \bibinfo{pages}{5084--5108}.
+\newblock
+\href{https://doi.org/10.1080/10447318.2025.2543997}{doi:\nolinkurl{10.1080/10447318.2025.2543997}}
+
+
+\bibitem[Stadler et~al\mbox{.}(2024)]%
+        {stadler_cognitive_2024}
+\bibfield{author}{\bibinfo{person}{Matthias Stadler}, \bibinfo{person}{Maria
+  Bannert}, {and} \bibinfo{person}{Michael Sailer}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Cognitive ease at a cost: {LLMs} reduce mental
+  effort but compromise depth in student scientific inquiry}.
+\newblock \bibinfo{journal}{\emph{Computers in Human Behavior}}
+  \bibinfo{volume}{160} (\bibinfo{year}{2024}), \bibinfo{pages}{108386}.
+\newblock
+\showISSN{0747-5632}
+\href{https://doi.org/10.1016/j.chb.2024.108386}{doi:\nolinkurl{10.1016/j.chb.2024.108386}}
+
+
+\bibitem[Steyvers et~al\mbox{.}(2022)]%
+        {steyvers_bayesian_2022}
+\bibfield{author}{\bibinfo{person}{Mark Steyvers}, \bibinfo{person}{Heliodoro
+  Tejeda}, \bibinfo{person}{Gavin Kerrigan}, {and} \bibinfo{person}{Padhraic
+  Smyth}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Bayesian modeling of human–{AI} complementarity}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the National Academy of
+  Sciences}} \bibinfo{volume}{119}, \bibinfo{number}{11} (\bibinfo{date}{March}
+  \bibinfo{year}{2022}), \bibinfo{pages}{e2111547119}.
+\newblock
+\href{https://doi.org/10.1073/pnas.2111547119}{doi:\nolinkurl{10.1073/pnas.2111547119}}
+\newblock
+\shownote{Publisher: Proceedings of the National Academy of Sciences}.
+
+
+\bibitem[Sui et~al\mbox{.}(2025)]%
+        {sui2025stop}
+\bibfield{author}{\bibinfo{person}{Yang Sui}, \bibinfo{person}{Yu-Neng Chuang},
+  \bibinfo{person}{Guanchu Wang}, \bibinfo{person}{Jiamu Zhang},
+  \bibinfo{person}{Tianyi Zhang}, \bibinfo{person}{Jiayi Yuan},
+  \bibinfo{person}{Hongyi Liu}, \bibinfo{person}{Andrew Wen},
+  \bibinfo{person}{Shaochen Zhong}, \bibinfo{person}{Na Zou}, {et~al\mbox{.}}}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Stop overthinking: A survey on efficient reasoning
+  for large language models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2503.16419}}
+  (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/arXiv.2503.16419}{doi:\nolinkurl{10.48550/arXiv.2503.16419}}
+
+
+\bibitem[Tankelevitch et~al\mbox{.}(2025)]%
+        {tankelevitch2025understanding}
+\bibfield{author}{\bibinfo{person}{Lev Tankelevitch}, \bibinfo{person}{Elena~L
+  Glassman}, \bibinfo{person}{Jessica He}, \bibinfo{person}{Aniket Kittur},
+  \bibinfo{person}{Mina Lee}, \bibinfo{person}{Srishti Palani},
+  \bibinfo{person}{Advait Sarkar}, \bibinfo{person}{Gonzalo Ramos},
+  \bibinfo{person}{Yvonne Rogers}, {and} \bibinfo{person}{Hari Subramonyam}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Understanding, Protecting, and Augmenting Human
+  Cognition with Generative AI: A Synthesis of the CHI 2025 Tools for Thought
+  Workshop}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2508.21036}}
+  (\bibinfo{year}{2025}).
+\newblock
+\href{https://doi.org/10.48550/arXiv.2508.21036}{doi:\nolinkurl{10.48550/arXiv.2508.21036}}
+
+
+\bibitem[Tankelevitch et~al\mbox{.}(2024)]%
+        {tankelevitch2023metacognitive}
+\bibfield{author}{\bibinfo{person}{Lev Tankelevitch}, \bibinfo{person}{Viktor
+  Kewenig}, \bibinfo{person}{Auste Simkute}, \bibinfo{person}{Ava~Elizabeth
+  Scott}, \bibinfo{person}{Advait Sarkar}, \bibinfo{person}{Abigail Sellen},
+  {and} \bibinfo{person}{Sean Rintel}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{The Metacognitive Demands and Opportunities of
+  Generative AI}. In \bibinfo{booktitle}{\emph{Proceedings of the CHI
+  Conference on Human Factors in Computing Systems}},
+  Vol.~\bibinfo{volume}{57}. \bibinfo{publisher}{ACM}, \bibinfo{pages}{1–24}.
+\newblock
+\href{https://doi.org/10.1145/3613904.3642902}{doi:\nolinkurl{10.1145/3613904.3642902}}
+
+
+\bibitem[Turpin et~al\mbox{.}(2023)]%
+        {10.5555/3666122.3669397}
+\bibfield{author}{\bibinfo{person}{Miles Turpin}, \bibinfo{person}{Julian
+  Michael}, \bibinfo{person}{Ethan Perez}, {and} \bibinfo{person}{Samuel~R.
+  Bowman}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Language models don't always say what they think:
+  unfaithful explanations in chain-of-thought prompting}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 37th International Conference on
+  Neural Information Processing Systems}} (New Orleans, LA, USA)
+  \emph{(\bibinfo{series}{NIPS '23})}. \bibinfo{publisher}{Curran Associates
+  Inc.}, \bibinfo{address}{Red Hook, NY, USA}, Article
+  \bibinfo{articleno}{3275}, \bibinfo{numpages}{14}~pages.
+\newblock
+
+
+\bibitem[Vaccaro et~al\mbox{.}(2024)]%
+        {vaccaro2024combinations}
+\bibfield{author}{\bibinfo{person}{Michelle Vaccaro}, \bibinfo{person}{Abdullah
+  Almaatouq}, {and} \bibinfo{person}{Thomas Malone}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{When combinations of humans and AI are useful: A
+  systematic review and meta-analysis}.
+\newblock \bibinfo{journal}{\emph{Nature Human Behaviour}}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{1--11}.
+\newblock
+\href{https://doi.org/10.1038/s41562-024-02024-1}{doi:\nolinkurl{10.1038/s41562-024-02024-1}}
+
+
+\bibitem[Vasconcelos et~al\mbox{.}(2023)]%
+        {vasconcelos2023explanations}
+\bibfield{author}{\bibinfo{person}{Helena Vasconcelos},
+  \bibinfo{person}{Matthew J{\"o}rke}, \bibinfo{person}{Madeleine
+  Grunde-McLaughlin}, \bibinfo{person}{Tobias Gerstenberg},
+  \bibinfo{person}{Michael~S Bernstein}, {and} \bibinfo{person}{Ranjay
+  Krishna}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Explanations can reduce overreliance on ai systems
+  during decision-making}.
+\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Human-Computer
+  Interaction}} \bibinfo{volume}{7}, \bibinfo{number}{Cscw1}
+  (\bibinfo{year}{2023}), \bibinfo{pages}{1--38}.
+\newblock
+\href{https://doi.org/10.1145/3579605}{doi:\nolinkurl{10.1145/3579605}}
+
+
+\bibitem[Villa et~al\mbox{.}(2023)]%
+        {villa2023placebo}
+\bibfield{author}{\bibinfo{person}{Steeven Villa}, \bibinfo{person}{Thomas
+  Kosch}, \bibinfo{person}{Felix Grelka}, \bibinfo{person}{Albrecht Schmidt},
+  {and} \bibinfo{person}{Robin Welsch}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{The placebo effect of human augmentation:
+  Anticipating cognitive augmentation increases risk-taking behavior}.
+\newblock \bibinfo{journal}{\emph{Computers in Human Behavior}}
+  \bibinfo{volume}{146} (\bibinfo{year}{2023}), \bibinfo{pages}{107787}.
+\newblock
+\href{https://doi.org/10.1016/j.chb.2023.107787}{doi:\nolinkurl{10.1016/j.chb.2023.107787}}
+
+
+\bibitem[Von~Zahn et~al\mbox{.}(2025)]%
+        {von2025knowing}
+\bibfield{author}{\bibinfo{person}{Moritz Von~Zahn}, \bibinfo{person}{Lena
+  Liebich}, \bibinfo{person}{Ekaterina Jussupow}, \bibinfo{person}{Oliver
+  Hinz}, {and} \bibinfo{person}{Kevin Bauer}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Knowing ({Not}) to {Know}: {Explainable}
+  {Artificial} {Intelligence} and {Human} {Metacognition}}.
+\newblock \bibinfo{journal}{\emph{Information Systems Research}}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{isre.2024.1431}.
+\newblock
+\showISSN{1047-7047, 1526-5536}
+\href{https://doi.org/10.1287/isre.2024.1431}{doi:\nolinkurl{10.1287/isre.2024.1431}}
+
+
+\bibitem[Wainer(1995)]%
+        {wainer1995precision}
+\bibfield{author}{\bibinfo{person}{Howard Wainer}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Precision and differential item functioning on a
+  testlet-based test: The 1991 Law School Admissions Test as an example}.
+\newblock \bibinfo{journal}{\emph{Applied Measurement in Education}}
+  \bibinfo{volume}{8}, \bibinfo{number}{2} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{157--86}.
+\newblock
+\href{https://doi.org/10.1207/s15324818ame0802_4}{doi:\nolinkurl{10.1207/s15324818ame0802_4}}
+
+
+\bibitem[Wang and Yin(2021)]%
+        {wang2021explanations}
+\bibfield{author}{\bibinfo{person}{Xinru Wang} {and} \bibinfo{person}{Ming
+  Yin}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Are Explanations Helpful? A Comparative Study of
+  the Effects of Explanations in AI-Assisted Decision-Making}.
+  \bibinfo{pages}{318--328}.
+\newblock
+\href{https://doi.org/10.1145/3397481.3450650}{doi:\nolinkurl{10.1145/3397481.3450650}}
+
+
+\bibitem[{xAI}(2025a)]%
+        {xai2025grok3}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2025}\natexlab{a}.
+\newblock \bibinfo{title}{{Grok} 3 Beta --- The Age of Reasoning Agents}.
+\newblock \bibinfo{howpublished}{\url{https://x.ai/news/grok-3}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-18}.
+
+
+\bibitem[{xAI}(2025b)]%
+        {xai2025reasoningencrypted}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2025}\natexlab{b}.
+\newblock \bibinfo{title}{Reasoning}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20251101193714/https://docs.x.ai/docs/guides/reasoning}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2025-11-01. Accessed: 2026-08-18}.
+
+
+\bibitem[{xAI}(2026a)]%
+        {xai2026grok46}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2026}\natexlab{a}.
+\newblock \bibinfo{title}{Introducing {Grok} 4.6}.
+\newblock
+\urldef\tempurl%
+\url{https://x.ai/news/grok-4-6}
+\showURL{%
+\tempurl}
+\newblock
+\shownote{Grok 4.6 builds on Grok 4.5 with a focus on long-running agents and
+  more ambitious interactive and visual work.}.
+
+
+\bibitem[{xAI}(2026b)]%
+        {xai2026reasoningdocs45}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2026}\natexlab{b}.
+\newblock \bibinfo{title}{Reasoning}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20260716130437/https://docs.x.ai/developers/model-capabilities/text/reasoning}}.
+\newblock
+\newblock
+\shownote{Internet Archive capture of 2026-07-16, contemporaneous with the Grok
+  4.5 release; the live page has since been rewritten for grok-4.6. Accessed:
+  2026-08-18}.
+
+
+\bibitem[{xAI}(2026c)]%
+        {xai_reasoning}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2026}\natexlab{c}.
+\newblock \bibinfo{title}{Reasoning}.
+\newblock
+  \bibinfo{howpublished}{\url{https://docs.x.ai/developers/model-capabilities/text/reasoning}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-19}.
+
+
+\bibitem[{xAI}(2026d)]%
+        {xai2026reasoning}
+\bibfield{author}{\bibinfo{person}{{xAI}}.} \bibinfo{year}{2026}\natexlab{d}.
+\newblock \bibinfo{title}{Reasoning --- {xAI} Developer Documentation}.
+\newblock
+  \bibinfo{howpublished}{\url{https://docs.x.ai/developers/model-capabilities/text/reasoning}}.
+\newblock
+\newblock
+\shownote{Accessed: 2026-08-12}.
+
+
+\bibitem[Zindulka et~al\mbox{.}(2026)]%
+        {Zindulka2026AIMemoryGap}
+\bibfield{author}{\bibinfo{person}{Tim Zindulka}, \bibinfo{person}{Sven
+  Goller}, \bibinfo{person}{Daniela Fernandes}, \bibinfo{person}{Robin Welsch},
+  {and} \bibinfo{person}{Daniel Buschek}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{The {AI} Memory Gap: Users Misremember What They
+  Created With {AI} or Without}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 2026 CHI Conference on Human Factors in Computing Systems}} (Barcelona,
+  Spain) \emph{(\bibinfo{series}{CHI '26})}. \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA}.
+\newblock
+\showISBNx{979-8-4007-2278-3}
+\href{https://doi.org/10.1145/3772318.3791494}{doi:\nolinkurl{10.1145/3772318.3791494}}
+
+
+\bibitem[Zulfikar et~al\mbox{.}(2024)]%
+        {zulfikar_memoro_2024}
+\bibfield{author}{\bibinfo{person}{Wazeer~Deen Zulfikar},
+  \bibinfo{person}{Samantha Chan}, {and} \bibinfo{person}{Pattie Maes}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Memoro: {Using} {Large} {Language} {Models} to
+  {Realize} a {Concise} {Interface} for {Real}-{Time} {Memory} {Augmentation}}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the {CHI} {Conference} on {Human}
+  {Factors} in {Computing} {Systems}}} \emph{(\bibinfo{series}{{Chi} '24})}.
+  \bibinfo{publisher}{Association for Computing Machinery},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1--18}.
+\newblock
+\showISBNx{9798400703300}
+\href{https://doi.org/10.1145/3613904.3642450}{doi:\nolinkurl{10.1145/3613904.3642450}}
+
+
+\end{thebibliography}

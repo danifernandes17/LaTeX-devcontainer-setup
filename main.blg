@@ -1,0 +1,85 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated field_info (elt_size=4) to 10292 items from 5000.
+Database file #1: references.bib
+Warning--I'm ignoring xai2026grok46's extra "note" field
+--line 1364 of file references.bib
+Database file #2: references_to_verify.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in barez2025chain
+Warning--page numbers missing in both pages and numpages fields in bastani2024generative
+Warning--no journal in colombatto2023illusions
+Warning--no number and no volume in colombatto2023illusions
+Warning--no number and no volume in colombatto2025metacognition
+Warning--page numbers missing in both pages and numpages fields in colombatto2025metacognition
+Warning--empty publisher in eiband2019impact
+Warning--empty address in eiband2019impact
+Warning--no number and no volume in engelbart1962augmenting
+Warning--empty address in fiedler2019metacognition
+Warning--empty publisher in 6645235
+Warning--empty address in 6645235
+Warning--no number and no volume in lindsey2025biology
+Warning--page numbers missing in both pages and numpages fields in lindsey2025biology
+Warning--no number and no volume in sui2025stop
+Warning--page numbers missing in both pages and numpages fields in sui2025stop
+Warning--no number and no volume in tankelevitch2025understanding
+Warning--page numbers missing in both pages and numpages fields in tankelevitch2025understanding
+Warning--empty address in tankelevitch2023metacognitive
+Warning--no number and no volume in vaccaro2024combinations
+Warning--no number and no volume in von2025knowing
+Warning--empty booktitle in wang2021explanations
+Warning--empty publisher in wang2021explanations
+Warning--empty address in wang2021explanations
+Warning--page numbers missing in both pages and numpages fields in Zindulka2026AIMemoryGap
+You've used 108 entries,
+            6273 wiz_defined-function locations,
+            2176 strings with 42614 characters,
+and the built_in function-call counts, 109011 in all, are:
+= -- 14329
+> -- 3577
+< -- 0
++ -- 1196
+- -- 1438
+* -- 7604
+:= -- 10973
+add.period$ -- 585
+call.type$ -- 108
+change.case$ -- 763
+chr.to.int$ -- 86
+cite$ -- 133
+duplicate$ -- 9248
+empty$ -- 6529
+format.name$ -- 1494
+if$ -- 26008
+int.to.chr$ -- 24
+int.to.str$ -- 1
+missing$ -- 230
+newline$ -- 1084
+num.names$ -- 740
+pop$ -- 3188
+preamble$ -- 1
+purify$ -- 1575
+quote$ -- 0
+skip$ -- 3487
+stack$ -- 0
+substring$ -- 7931
+swap$ -- 855
+text.length$ -- 304
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2576
+warning$ -- 25
+while$ -- 668
+width$ -- 0
+write$ -- 2251
+(There were 26 warnings)

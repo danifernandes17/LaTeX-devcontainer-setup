@@ -1,0 +1,255 @@
+%% =====================================================================
+%% references_to_verify.bib
+%%
+%% 25 sources added 2026-08-12 for the appendix provider-comparison tables
+%% (sec:provider_landscape) and the Discussion subsection on trace kinds
+%% (sec:trace_kinds). Kept separate from references.bib so each can be
+%% confirmed independently; move entries across as you verify them.
+%%
+%% main.tex loads both: \bibliography{references,references_to_verify}
+%%
+%% VERIFICATION STATUS is recorded per entry in a `verify` field. Values:
+%%   quoted   - the agent extracted the supporting quote from the primary
+%%              artifact itself (PDF text or raw page body)
+%%   fetched  - page body retrieved and read, no verbatim quote pulled
+%%   CHECK    - could not be fetched, or a discrepancy was noted; confirm
+%%              in a browser before relying on it
+%%
+%% Known caveat not attached to any entry below: openai.com/index/* returns
+%% HTTP 403 to all automated fetching, which affects `openai2024learning`
+%% in the MAIN references.bib. Its "we have decided not to show the raw
+%% chains of thought" quote was triangulated across three third parties
+%% rather than read from the page. Worth a browser check too.
+%% =====================================================================
+
+% ---------------------------------------------------------------------
+% Provider reasoning-trace exposure (Appendix: sec:provider_landscape).
+% Compiled 2026-08-12; every entry verified against the cited page on
+% that date. See the todolist in the appendix section for the small
+% number of claims that still need a browser check before camera-ready.
+% ---------------------------------------------------------------------
+
+@misc{deepseek2025thinking,
+  author       = {{DeepSeek}},
+  title        = {Thinking Mode --- {API} Documentation},
+  year         = {2025},
+  howpublished = {\url{https://api-docs.deepseek.com/guides/thinking_mode}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- "chain-of-thought content is returned via the reasoning_content
+                 parameter"}
+}
+
+@misc{moonshot2026k3,
+  author       = {{Moonshot AI}},
+  title        = {{Kimi K3} Quickstart},
+  year         = {2026},
+  howpublished = {\url{https://platform.kimi.ai/docs/guide/kimi-k3-quickstart}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {MANUALLY VERIFIED}
+}
+
+@misc{moonshot2025k2thinking,
+  author       = {{Moonshot AI}},
+  title        = {{Kimi K2} Thinking},
+  year         = {2025},
+  howpublished = {\url{https://huggingface.co/moonshotai/Kimi-K2-Thinking}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- HF model card}
+}
+
+@misc{alibaba2026deepthinking,
+  author       = {{Alibaba Cloud}},
+  title        = {Deep Thinking},
+  year         = {2026},
+  howpublished = {\url{https://www.alibabacloud.com/help/en/model-studio/deep-thinking}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- "returns reasoning in the reasoning_content field"}
+}
+
+@misc{mistral2026reasoning,
+  author       = {{Mistral AI}},
+  title        = {Reasoning --- {Mistral} Documentation},
+  year         = {2026},
+  howpublished = {\url{https://docs.mistral.ai/capabilities/reasoning/}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- "ThinkChunk (type: thinking): contains the model's reasoning trace"}
+}
+
+@misc{meta2026reasoning,
+  author       = {{Meta}},
+  title        = {Reasoning},
+  year         = {2026},
+  howpublished = {\url{https://ai.developer.meta.com/docs/reasoning/}},
+  note         = {Meta Model {API} documentation. Accessed: 2026-08-18},
+  verify       = {HUMAN-VERIFIED 2026-08-18: editor read the rendered page in a browser -- it
+                 serves a JavaScript-only shell to automated fetchers (and carries a noarchive
+                 directive), so every future re-check must also be done in a browser. CAUTION: the
+                 page renders intermittently even in browsers -- it sometimes shows a generic "this
+                 page isn't available / an unexpected error has occurred" screen while the server
+                 keeps returning HTTP 200 (client-side content-request failure); a reload or hard
+                 refresh usually recovers it, so do not misread the error screen as a dead link
+                 (this flakiness also explains the 2026-08-12 "page not available" review comment).
+                 quoted --
+                 "Raw reasoning is not exposed as text: The model's chain of thought is private.
+                 The raw reasoning is not returned as readable text in the response body and is not
+                 emitted as stream events; only the visible output and, if you request one, a
+                 reasoning summary, is streamed. On the Responses API, the raw reasoning is
+                 available solely as encrypted content for replay via
+                 include: [reasoning.encrypted_content]. During built-in tool loops [...] reasoning
+                 output items appear with empty content [...] and no visible reasoning text is
+                 exposed." The full page (read by the editor) also states verbatim: "The raw chain of
+                 thought stays private, but on the Responses API you can request a natural-language
+                 summary of it" (validating the original 2026-08-12 capture word for word) and, for
+                 Chat Completions, that reasoning_content "holds the model's private chain of thought
+                 and is redacted to empty before the response reaches an external caller" (validating
+                 the original "redacted to empty" capture). Summaries via reasoning.summary =
+                 auto/concise/detailed are optional output -- supports the "Summary + encrypted"
+                 table cell. URL updated from the dead dev.meta.ai/docs/reasoning.md. Supersedes the
+                 interim third-party citation promptfoo2026meta. OFFICIAL MACHINE-VERIFIABLE
+                 CORROBORATION (found 2026-08-18, useful because this docs page cannot be checked by
+                 automation): Meta's cookbook repo github.com/meta-models/meta-model-cookbook
+                 (LICENSE "Copyright (c) Meta Platforms, Inc."; linked as "Meta-Models Github" from
+                 developer.meta.com/ai/products/meta-model-api/), notebook
+                 01_api_fundamentals/06_reasoning_tokens.ipynb at commit 9faa831, states verbatim:
+                 "The chain-of-thought is not returned as text on Chat Completions: the non-standard
+                 reasoning_content field is empty today on the public endpoint" and, for the
+                 Responses API, "Its content is **encrypted** -- you can replay it across turns, not
+                 read it". Fetchable via raw.githubusercontent.com for automated re-checks.}
+}
+
+@misc{fmf2026cot,
+  author       = {{Frontier Model Forum}},
+  title        = {Chain of Thought Monitorability},
+  year         = {2026},
+  month        = jan,
+  howpublished = {\url{https://www.frontiermodelforum.org/issue-briefs/chain-of-thought-monitorability/}},
+  note         = {Issue brief. Accessed: 2026-08-12},
+  verify       = {quoted -- "refrain from recommending the public disclosure of internal CoTs".
+                 Load-bearing for the convergence claim.}
+}
+
+@misc{chen2025saywhattheythink,
+  author       = {Chen, Yanda and Benton, Joe and Radhakrishnan, Ansh and others},
+  title        = {Reasoning Models Don't Always Say What They Think},
+  year         = {2025},
+  eprint       = {2505.05410},
+  archiveprefix = {arXiv},
+  note         = {Accessed: 2026-08-12},
+  verify       = {fetched -- hint-verbalisation rates; not quoted verbatim in our text}
+}
+
+@misc{panfilov2026stealing,
+  author       = {Panfilov, Alexander and Schmotz, David and Shumailov, Ilia and others},
+  title        = {Stealing Reasoning Traces from Proprietary {LLM} {API}s},
+  year         = {2026},
+  eprint       = {2608.09867},
+  archiveprefix = {arXiv},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- "Leading LLM providers now conceal their models' step-by-step
+                 reasoning". Not currently cited in main.tex; available if wanted.}
+}
+
+% --- Trace character / comparability across models (sec:trace_kinds) ---
+
+@techreport{kimi2026k3report,
+  author       = {{Kimi Team}},
+  title        = {{Kimi K3}: Open Frontier Intelligence},
+  institution  = {Moonshot AI},
+  year         = {2026},
+  month        = jul,
+  howpublished = {\url{https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf}},
+  note         = {Accessed: 2026-08-12},
+  verify       = {quoted -- section F extracted from PDF: channels "inspired by OpenAI's Harmony
+                 response format"; preserved-thinking requirement}
+}
+
+@inproceedings{li2026schoenfeld,
+  author    = {Li, Ming and Fan, Chenrui and Cheng, Yize and Feizi, Soheil and Zhou, Tianyi},
+  title     = {Schoenfeld's Anatomy of Mathematical Reasoning by Language Models},
+  booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2026},
+  eprint    = {2512.19995},
+  archiveprefix = {arXiv},
+  note      = {Accessed: 2026-08-12},
+  verify       = {quoted -- planning 4-8%; verify 3-4% to 10-12%; "selectively suppress evaluative
+                 feedback steps". Peer-reviewed ACL 2026 - the strongest new citation.}
+}
+
+@misc{lee2026reasoningflow,
+  author    = {Lee, Jinu and Agarwal, Shivam and Parulekar, Amruta and Madala, Siddarth and Hakkani-Tur, Dilek and Hockenmaier, Julia},
+  title     = {{ReasoningFlow}: Discourse Structures for Understanding {LLM} Reasoning Traces},
+  year      = {2026},
+  eprint    = {2606.05402},
+  archiveprefix = {arXiv},
+  note      = {Accessed: 2026-08-12},
+  verify       = {quoted -- structural convergence across reasoning models incl. gpt-oss-120B}
+}
+
+@misc{chen2025lot,
+  author    = {Chen, Yida and Mao, Yuning and Yang, Xianjun and others},
+  title     = {Your Thoughts Tell Who You Are: Characterize the Reasoning Patterns of {LRMs}},
+  year      = {2025},
+  eprint    = {2509.24147},
+  archiveprefix = {arXiv},
+  note      = {Accessed: 2026-08-12},
+  verify       = {quoted -- 80-100% source-model identification from trace style; the counterweight
+                 to lee2026reasoningflow}
+}
+
+@inproceedings{wendler2024llamas,
+  author    = {Wendler, Chris and Veselovsky, Veniamin and Monea, Giovanni and West, Robert},
+  title     = {Do {Llamas} Work in {English}? On the Latent Language of Multilingual Transformers},
+  booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2024},
+  pages     = {15366--15394},
+  doi       = {10.18653/v1/2024.acl-long.820},
+  verify       = {quoted -- names the think-in-English-then-translate intuition as a popular claim,
+                 not a finding}
+}
+
+
+
+@inproceedings{qi2025thinkinglanguage,
+  author    = {Qi, Jirui  and
+      Chen, Shan  and
+      Xiong, Zidi  and
+      Fern{\'a}ndez, Raquel  and
+      Bitterman, Danielle  and
+      Bisazza, Arianna},
+  title     = {When Models Reason in Your Language: Controlling Thinking Language Comes at the Cost of Accuracy},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP},
+  year      = {2025},
+  pages     = {20279--20296},
+  eprint    = {2505.22888},
+  archiveprefix = {arXiv},
+  verify       = {quoted -- models resist redirection of thinking language; readability/accuracy
+                 trade-off}
+}
+
+@article{deepseek2025r1nature,
+  author  = {Guo, Daya and Yang, Dejian and Zhang, Haowei and Song, Junxiao and others},
+  title   = {{DeepSeek-R1} Incentivizes Reasoning in {LLMs} Through Reinforcement Learning},
+  journal = {Nature},
+  volume  = {645},
+  number  = {8081},
+  pages   = {633--638},
+  year    = {2025},
+  doi     = {10.1038/s41586-025-09422-z},
+  verify       = {quoted -- language-consistency reward; language MIXING during generation, not
+                 post-hoc translation}
+}
+
+
+
+
+
+@misc{google2026gemmathinking,
+  author       = {{Google}},
+  title        = {Thinking Mode in {Gemma}},
+  year         = {2026},
+  howpublished = {\url{https://ai.google.dev/gemma/docs/capabilities/thinking}},
+  note         = {Accessed: 2026-08-18},
+  verify       = {quoted 2026-08-18 -- names Gemma 4; "the response will contain both the reasoning
+                 blocks and the final answer bounded by special tokens" (raw trace exposure for the
+                 Google open-weight row).}
+}
